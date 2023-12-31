@@ -12,6 +12,7 @@ use ReflectionClass;
 use ReflectionNamedType;
 
 class Container
+
 {
     private array $definitions = [];
     private array $resolved = [];
