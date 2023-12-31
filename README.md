@@ -18,7 +18,7 @@ Ensure that you have the following software installed:
 1. **Clone the MaymaBeats repository:**
 
     ```bash
-    git clone https://github.com/your-username/maymabeats.git
+    https://github.com/BelAnouar/MaymaBeats.git
     ```
 
 2. **Navigate to the project directory:**
