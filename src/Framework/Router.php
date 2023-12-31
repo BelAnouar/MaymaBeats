@@ -41,7 +41,7 @@ class Router
         !preg_match("#^{$route['path']}$#", $path) ||
         $route['method'] !== $method
       ) {
-        dd($path);
+
 
         continue;
       }
