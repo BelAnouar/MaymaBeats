@@ -17,7 +17,7 @@ class AuthController
 
     public function  index()
     {
-        echo $this->view->render("/register.php");
+        echo $this->view->render("/signup.php");
     }
     public function  register()
     {
