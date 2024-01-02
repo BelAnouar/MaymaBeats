@@ -18,7 +18,7 @@ class Container
 
 
     public function addDefinitions(array $newDefinitions)
-    {
+    {   
         $this->definitions = array_merge($this->definitions, $newDefinitions);
     }
     public function resolve(string $className)
@@ -68,7 +68,7 @@ class Container
             return $this->resolved[$id];
         }
         $factory = $this->definitions[$id];
-
+      
         $dependency = $factory($this);
         $this->resolved[$id] = $dependency;
         return $dependency;

@@ -1,7 +1,7 @@
 body {
     height: 100vh;
     margin: 0;
-    background-color: #ffffff;
+    background-color: #202020;
     /* background-image: url(./blurred-night-lights.jpg);
     background-position: bottom; */
   }
@@ -22,12 +22,12 @@ border: none;
    }
   #sidebar {
     height: 100vh;
-    background-image: url(./1_FNFvLAb829YmBOQ70-2XoA.jpg);
+    /* background-image: url(./1_FNFvLAb829YmBOQ70-2XoA.jpg); */
 
     background-position: right;
-/*     
+    
     background: rgb(3,33,57);
-background: linear-gradient(139deg, rgba(3,33,57,1) 27%, rgba(35,3,57,1) 51%, rgba(99,23,151,1) 98%, rgba(132,13,159,0.9427229509968049) 100%); padding: 20px; */
+background: linear-gradient(139deg, rgba(3,33,57,1) 27%, rgba(35,3,57,1) 51%, rgba(99,23,151,1) 98%, rgba(132,13,159,0.9427229509968049) 100%); padding: 20px;
     color: #fff;
   }
 
@@ -66,7 +66,7 @@ background: linear-gradient(139deg, rgba(3,33,57,1) 27%, rgba(35,3,57,1) 51%, rg
     border-radius: 5px;
     box-shadow: 6px 10px #0000001a;
     width: 100%; /* Full width under the two boxes */
-    background-color: #adadad;
+    background-color: #151515;
     padding: 20px;
     box-sizing: border-box;
     margin-bottom: 20px;
