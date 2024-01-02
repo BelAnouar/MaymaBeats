@@ -25,7 +25,11 @@ class Router
     $path = trim($path, '/');
     $path = "/{$path}/";
     $path = preg_replace('#[/]{2,}#', '/', $path);
+<<<<<<< HEAD
     $path = str_replace("/MaymaBeats/public/index.php/", "/", $path);
+=======
+    $path = str_replace("/maymabeats/public/index.php/", "/", $path);
+>>>>>>> 2e04b579211e3523d990f624e15c597b88f0c967
 
     return $path;
   }
@@ -36,8 +40,9 @@ class Router
     $method = strtoupper($method);
 
     foreach ($this->routes as $route) {
+      
       if (
-
+      
         !preg_match("#^{$route['path']}$#", $path) ||
         $route['method'] !== $method
       ) {
@@ -45,7 +50,7 @@ class Router
 
         continue;
       }
-
+      dd($route['controller']);
       [$class, $function] = $route['controller'];
 
       $controllerInstance = $container ?
