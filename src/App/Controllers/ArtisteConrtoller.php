@@ -8,14 +8,14 @@ namespace App\Controllers;
 
 use Framework\TemplateEngine;
 
-class ArtistsConrtoller{
+class ArtisteConrtoller{
 
     public function __construct(private TemplateEngine $view){
 
     }
     public function index(){
          
-        echo $this->view->render("/artis.php");
+        echo $this->view->render("/artiste.php");
     }
 
 }

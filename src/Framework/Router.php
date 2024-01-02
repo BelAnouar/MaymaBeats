@@ -46,7 +46,7 @@ class Router
 
         continue;
       }
-      dd($route['controller']);
+   
       [$class, $function] = $route['controller'];
 
       $controllerInstance = $container ?
