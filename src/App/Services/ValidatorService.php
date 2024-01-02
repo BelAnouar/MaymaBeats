@@ -27,14 +27,5 @@ class ValidatorService
 
     public  function validateRegister(array $formData)
     {
-        $this->validator->validate($formData, [
-            'email' => ["required", "email"],
-            'age' => ["required", "min:18"],
-            'country' => ["required"],
-            'social' => ["required"],
-            'password' => ["required"],
-            'Cpassword' => ["required"],
-            'terms' => ["required"]
-        ]);
     }
 }

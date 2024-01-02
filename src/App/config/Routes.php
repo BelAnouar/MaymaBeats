@@ -27,4 +27,5 @@ function registerRoutes(App $app)
     $app->get('/admin-c', [AdminCl::class, 'index']);
     $app->get('/admin-a', [AdminAr::class, 'index']);
     $app->get('/adminNot', [AdminNot::class, 'index']);
+    $app->get('/signup', [AuthController::class, 'index']);
 }
