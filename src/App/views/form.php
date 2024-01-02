@@ -8,13 +8,11 @@
 </head>
 
 <body>
-    <form method="post">
+    <form method="POST">
         <input name="rr" type="text" />
 
-        <button type="submit">cl</button>
+        <input type="submit" value="dc">
     </form>
-
-
 </body>
 
 </html>
