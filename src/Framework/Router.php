@@ -42,9 +42,7 @@ class Router
       ) {
         continue;
       }
-<<<<<<< HEAD
    
-=======
 
 
       array_shift($paramValues);
@@ -55,7 +53,6 @@ class Router
 
       $params = array_combine($paramKeys, $paramValues);
 
->>>>>>> de362ca00ce010dda243ad8cd291bd2772a58c23
       [$class, $function] = $route['controller'];
 
       $controllerInstance = $container ?
