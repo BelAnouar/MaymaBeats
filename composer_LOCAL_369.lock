@@ -5,12 +5,6 @@
         "This file is @generated automatically"
     ],
 <<<<<<< HEAD
-<<<<<<< HEAD
-=======
-    "content-hash": "2e21759f5a147c6caafbaf09c8ce5627",
-    "packages": [],
-=======
->>>>>>> oumaima
     "content-hash": "52124f4bc6bc1d5b27fbc21d14b936ce",
     "packages": [
         {
@@ -483,13 +477,9 @@
             "time": "2023-11-12T22:43:29+00:00"
         }
     ],
-<<<<<<< HEAD
 =======
     "content-hash": "2e21759f5a147c6caafbaf09c8ce5627",
     "packages": [],
->>>>>>> oumaima
-=======
->>>>>>> ca5f4171356a47a9c175e7372db828c1e4d20e2d
 >>>>>>> oumaima
     "packages-dev": [],
     "aliases": [],
