@@ -21,6 +21,7 @@ use App\Controllers\LoginController;
 
 use App\Controllers\SalahController;
 use App\Controllers\profilecontroller;
+use App\Controllers\Reactioncontroller;
 use App\Controllers\StylesController;
 use App\Controllers\TestController;
 
@@ -46,4 +47,7 @@ function registerRoutes(App $app)
     $app->get("/test", [TestController::class, "index"]);
     $app->get('/test/{anouar}', [TestController::class, "aff"]);
     $app->post("/test", [TestController::class, "post"]);
+    $app->post("/client", [Reactioncontroller::class, "addlike"]);
+    $app->post("/client", [Reactioncontroller::class, "adddislike"]);
+
 }
