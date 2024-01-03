@@ -20,6 +20,8 @@ use App\Controllers\AuthController;
 use App\Controllers\LoginController;
 use App\Controllers\SalahController;
 use App\Controllers\profilecontroller;
+use App\Controllers\StylesController;
+use App\Controllers\TestController;
 
 function registerRoutes(App $app)
 {
@@ -38,4 +40,13 @@ function registerRoutes(App $app)
     $app->get('/admin-c', [AdminCl::class, 'index']);
     $app->get('/admin-a', [AdminAr::class, 'index']);
     $app->get('/adminNot', [AdminNot::class, 'index']);
+    $app->get('/admin-s', [StylesController::class, 'index']);
+    $app->get('/admin-s/{transaction}', [StylesController::class, 'view']);
+
+
+
+
+    $app->get("/test", [TestController::class, "index"]);
+    $app->get('/test/{anouar}', [TestController::class, "aff"]);
+    $app->post("/test", [TestController::class, "post"]);
 }

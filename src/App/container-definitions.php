@@ -3,7 +3,7 @@
 declare(strict_types=1);
 
 use App\Config\Paths;
-
+use App\Services\TestService;
 use App\Services\ValidatorService;
 use Framework\Container;
 use Framework\Database;
@@ -23,6 +23,11 @@ return [
         $db = $container->get(Database::class);
 
         return new ValidatorService($db);
+    },
+    TestService::class => function (Container $container) {
+        $db = $container->get(Database::class);
+
+        return new TestService($db);
     }
 
 ];

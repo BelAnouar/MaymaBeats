@@ -43,6 +43,9 @@
                             <img src="/MaymaBeats/public/assets/icons8-clients-64.png" alt="" class="col-3">CLIENT</a>
                         <a href="admin-a" class="list-group-item list-group-item-action bg-transparent">
                             <img src="/MaymaBeats/public/assets/icons8-garageband-64.png" alt="" class="col-3">ARTISTS</a>
+                        <a href="admin-s" class="list-group-item list-group-item-action bg-transparent">
+                            <img src="/MaymaBeats/public/assets/icons8-garageband-64.png" alt="" class="col-3">Styles
+                        </a>
                         <a href="#" class="list-group-item list-group-item-action bg-transparent col-12 d-flex"> <img src="/MaymaBeats/public/assets/icons8-notifications-78.png" alt="" class="col-3">NOTIFICATIONS</a>
                         <a href="#" class="list-group-item list-group-item-action bg-transparent"><img src="/MaymaBeats/public/assets/icons8-logout-50.png" alt="" class="col-2">LOGOUT</a>
                     </div>
