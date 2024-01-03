@@ -18,7 +18,7 @@ use App\Controllers\HomeController;
 
 use App\Controllers\AuthController;
 use App\Controllers\LoginController;
-
+use App\Controllers\parolecontroller;
 use App\Controllers\SalahController;
 use App\Controllers\profilecontroller;
 use App\Controllers\Reactioncontroller;
@@ -49,5 +49,9 @@ function registerRoutes(App $app)
     $app->post("/test", [TestController::class, "post"]);
     $app->post("/client", [Reactioncontroller::class, "addlike"]);
     $app->post("/client", [Reactioncontroller::class, "adddislike"]);
+    $app->get("/client", [parolecontroller::class, "addlyrics"]);
+    $app->post("/client", [parolecontroller::class, "deletelyrics"]);
+
+
 
 }
