@@ -3,6 +3,7 @@
 declare(strict_types=1);
 
 use App\Config\Paths;
+use app\Services\Reactionmodel;
 use App\Services\TestService;
 use App\Services\ValidatorService;
 use Framework\Container;
@@ -28,6 +29,11 @@ return [
         $db = $container->get(Database::class);
 
         return new TestService($db);
+    },
+    Reactionmodel::class => function (Container $container) {
+        $db = $container->get(Database::class);
+
+        return new Reactionmodel($db);
     }
 
 ];
