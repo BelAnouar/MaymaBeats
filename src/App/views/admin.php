@@ -12,185 +12,50 @@
 </head>
 
 <body>
-
-  <section class="Dashboard">
-
-    <div class="container-fluid h-100">
-      <div class="row h-100">
-        <div id="sidebar" class="col-2">
-          <h1>LOGO</h1>
-          <!-- <ul class="sidelist list-unstyled mb-3 d-flex flex-column justify-content-between col-12">
-                        <img src="/MaymaBeats/public/assets/circle-user-regular.svg" alt="" class="my-5">
-                        <p class="my-3">ADMIN NAME</p>
-                        <li class="my-3 home col-12"><a href="#">HOME</a></li>
-                        <li class="my-3"><a href="#">CLIENT</a></li>
-                        <li class="my-3"><a href="#">ARTISTS</a></li>
-                        <li class="my-3"><img src="/MaymaBeats/public/assets/facebook-messenger.svg" alt=""><a href="#">NOTIFICATIONS</a></li>
-                        <li class="my-3"><a href="#">LOGOUT</a></li>
-                    </ul> -->
-          <div class="list-group col-12 ">
-            <img src="/MaymaBeats/public/assets/circle-user-regular.svg " alt="" class="my-4 col-8" height="20%">
-            <a href="#" class="list-group-item list-group-item-action home">
-              <img src="/MaymaBeats/public/assets/icons8-home-100.png" alt="" class="col-2"> HOME
-            </a>
-
-            <a href="admin-c" class="list-group-item list-group-item-action bg-transparent" aria-current="true">
-              <img src="/MaymaBeats/public/assets/icons8-clients-64.png" alt="" class="col-3">CLIENT</a>
-            <a href="admin-a" class="list-group-item list-group-item-action bg-transparent">
-              <img src="/MaymaBeats/public/assets/icons8-garageband-64.png" alt="" class="col-3">ARTISTS</a>
-            <a href="admin-s" class="list-group-item list-group-item-action bg-transparent">
-              <img src="/MaymaBeats/public/assets/icons8-garageband-64.png" alt="" class="col-3">Styles
-            </a>
-            <a href="#" class="list-group-item list-group-item-action bg-transparent col-12 d-flex"> <img src="/MaymaBeats/public/assets/icons8-notifications-78.png" alt="" class="col-3">NOTIFICATIONS</a>
-            <a href="#" class="list-group-item list-group-item-action bg-transparent"><img src="/MaymaBeats/public/assets/icons8-logout-50.png" alt="" class="col-2">LOGOUT</a>
-          </div>
+  <div class="wrapper">
+    <!-- Sidebar -->
+    <aside id="sidebar">
+      <div class="h-100">
+        <div class="sidebar-logo " style="margin-top: -9%;">
+          <img src="vecteezy-music-writer-with-feather-and-g-clef-logo-1-658cba5074038115508023-removebg-preview.png" alt="" style="width: 65%; margin-left: -20%; ">
+          <a href="#" style="margin-left: -15%;">MaymaBeats</a>
         </div>
-        <div id="content" class="d-flex flex-wrap col-9 my-3 mx-5">
-          <div id="box1">
-            CLIENTS
-            520
-          </div>
-          <div id="box2">
-            ARTISTS
-            135
-          </div>
-          <div id="extraContainer">
-            STATISTICS
-            <div class="additional-content">
-              <table class="table table-hover bg-black text-white">
-                <thead>
-                  <tr>
-                    <th scope="col">#</th>
-                    <th scope="col">First</th>
-                    <th scope="col" class="col-2">song</th>
-                    <th scope="col">likes</th>
-                    <th scope="col">artist</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <th scope="row">1</th>
-                    <td><img src="/MaymaBeats/public/assets/fire-flame-curved-solid.svg" alt="">Most liked song</td>
-                    <td><img src="/MaymaBeats/public/assets/icons8-song-32.png" alt="" class="col-2">Otto</td>
-                    <td>@mdo</td>
-                    <td>@mdo</td>
+        <!-- Sidebar Navigation -->
+        <ul class="sidebar-nav">
+          <li class="sidebar-item">
+            <a href="admin" class="sidebar-link">
+              <i class="fa-solid fa-home p-2 "></i>
+              Home
+            </a>
+          </li>
+          <li class="sidebar-item">
+            <a href="admin-c" class="sidebar-link">
+              <i class="fa-solid fa-compact-disc p-2 "></i>
+              Clients
+            </a>
+          </li>
 
-                  </tr>
-                  <tr>
-                    <th scope="row">2</th>
-                    <td><img src="/MaymaBeats/public/assets/fire-flame-curved-solid.svg" alt="">Most liked album</td>
-                    <td><img src="/MaymaBeats/public/assets/icons8-song-32.png" alt="" class="col-2">Thornton</td>
-                    <td>@fat</td>
-                    <td>@fat</td>
-                  </tr>
-                  <tr>
-                    <th scope="row">3</th>
-                    <td><img src="/MaymaBeats/public/assets/fire-flame-curved-solid.svg" alt="">Most liked lyrics</td>
-                    <td><img src="/MaymaBeats/public/assets/icons8-song-32.png" alt="" class="col-2">@twitter</td>
-                    <td>@twitter</td>
-                    <td>@twitter</td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-          </div>
-          <div id="box3">
-            <div class="d-flex flex-column">
-              MOST ACTIVE ARTIST
+          <li class="sidebar-item">
+            <a href="admin-a" class="sidebar-link">
+              <i class="fa-regular fa-user p-2 "></i>
+              Artists
+            </a>
+          </li>
+          <li class="sidebar-item">
+            <a href="adminNot" class="sidebar-link">
+              <i class="fa-regular fa-user p-2 "></i>
+              Notifications
+            </a>
+          </li>
+          <li class="sidebar-item">
+            <a href="#" class="sidebar-link">
+              <i class="fa-solid fa-right-from-bracket p-2 "></i>
+              Logout
+            </a>
+          </li>
 
-              <div class="progress my-3" role="progressbar" aria-label="Success example" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
-                <img src="/MaymaBeats/public/assets/icons8-disk.gif" alt="" class="col-1">
-                <div class="progress-bar bg-success" style="width: 25%"></div>
-              </div>
-              <div class="progress my-3" role="progressbar" aria-label="Info example" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">
-                <img src="/MaymaBeats/public/assets/icons8-disk.gif" alt="" class="col-1">
-                <div class="progress-bar bg-info" style="width: 50%"></div>
-              </div>
-              <div class="progress my-3" role="progressbar" aria-label="Warning example" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
-                <img src="/MaymaBeats/public/assets/icons8-disk.gif" alt="" class="col-1">
-                <div class="progress-bar bg-warning" style="width: 75%"></div>
-              </div>
-              <div class="progress my-3" role="progressbar" aria-label="Danger example" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">
-                <img src="/MaymaBeats/public/assets/icons8-disk.gif" alt="" class="col-1">
-                <div class="progress-bar bg-danger" style="width: 100%"></div>
-              </div>
-            </div>
-          </div>
-
-          <div id="box4">
-            <div class="d-flex flex-column">
-              RECLAMATIONS
-              <table class="table">
-                <thead>
-                  <tr>
-                    <th scope="col">#</th>
-                    <th scope="col">Lyrics</th>
-                    <th scope="col">song</th>
-                    <th scope="col">Numbers</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <th scope="row">1</th>
-                    <td>Mark</td>
-                    <td>lately</td>
-                    <td>220</td>
-                  </tr>
-                  <tr>
-                    <th scope="row">2</th>
-                    <td>Jacob</td>
-                    <td>Thornton</td>
-                    <td>76</td>
-                  </tr>
-                  <tr>
-                    <th scope="row">3</th>
-                    <td colspan="2">Larry the Bird</td>
-                    <td>61</td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-          </div>
-
-        </div>
+        </ul>
       </div>
-    </div>
-    <!-- Sidebar Navigation -->
-    <ul class="sidebar-nav">
-      <li class="sidebar-item">
-        <a href="admin" class="sidebar-link">
-          <i class="fa-solid fa-home p-2 "></i>
-          Home
-        </a>
-      </li>
-      <li class="sidebar-item">
-        <a href="admin-c" class="sidebar-link">
-          <i class="fa-solid fa-compact-disc p-2 "></i>
-          Clients
-        </a>
-      </li>
-
-      <li class="sidebar-item">
-        <a href="admin-a" class="sidebar-link">
-          <i class="fa-regular fa-user p-2 "></i>
-          Artists
-        </a>
-      </li>
-      <li class="sidebar-item">
-        <a href="adminNot" class="sidebar-link">
-          <i class="fa-regular fa-user p-2 "></i>
-          Notifications
-        </a>
-      </li>
-      <li class="sidebar-item">
-        <a href="#" class="sidebar-link">
-          <i class="fa-solid fa-right-from-bracket p-2 "></i>
-          Logout
-        </a>
-      </li>
-
-    </ul>
-    </div>
     </aside>
     <div class="main">
       <nav class="navbar navbar-expand px-3 border-bottom">
@@ -334,44 +199,44 @@
       </section>
     </div>
 
-    </div>
+  </div>
 
 
 
 
 
-    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 
-    <script>
-      const ctx = document.getElementById('myChart');
+  <script>
+    const ctx = document.getElementById('myChart');
 
-      new Chart(ctx, {
-        type: 'bar',
-        data: {
-          labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
-          datasets: [{
-            label: '# of Votes',
-            data: [12, 19, 3, 5, 2, 3],
-            borderWidth: 1
-          }]
-        },
-        options: {
-          scales: {
-            y: {
-              beginAtZero: true
-            }
+    new Chart(ctx, {
+      type: 'bar',
+      data: {
+        labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
+        datasets: [{
+          label: '# of Votes',
+          data: [12, 19, 3, 5, 2, 3],
+          borderWidth: 1
+        }]
+      },
+      options: {
+        scales: {
+          y: {
+            beginAtZero: true
           }
         }
-      });
-    </script>
+      }
+    });
+  </script>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
-    <script>
-      const toggler = document.querySelector(".btn");
-      toggler.addEventListener("click", function() {
-        document.querySelector("#sidebar").classList.toggle("collapsed");
-      });
-    </script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+  <script>
+    const toggler = document.querySelector(".btn");
+    toggler.addEventListener("click", function() {
+      document.querySelector("#sidebar").classList.toggle("collapsed");
+    });
+  </script>
 
 </body>
 
