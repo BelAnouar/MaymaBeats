@@ -50,7 +50,7 @@
                         <a href="#" class="list-group-item list-group-item-action bg-transparent"><img src="/MaymaBeats/public/assets/icons8-logout-50.png" alt="" class="col-2">LOGOUT</a>
                     </div>
                 </div>
-                <div id="content" class="d-flex flex-wrap col-9 my-3 mx-5">
+                <div id="content" class="d-flex flex-column flex-wrap col-9 mt-4 mx-5">
                     <div class="text-end mb-3">
                         <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#exampleModal">
                             <ion-icon name="create-outline"></ion-icon> Add
@@ -64,18 +64,20 @@
                                     <h1 class="modal-title fs-5" id="exampleModalLabel">Add Style</h1>
                                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                                 </div>
-                                <div class="modal-body">
-                                    <label for="exampleDataList" class="form-label">entrer style music</label>
-                                    <input class="form-control" list="datalistOptions" id="exampleDataList" placeholder="Type to search...">
-                                </div>
-                                <div class="modal-footer">
-                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                                    <button type="button" class="btn btn-primary">add</button>
-                                </div>
+                                <form method="post">
+                                    <div class="modal-body">
+                                        <label for="exampleDataList" class="form-label">entrer style music</label>
+                                        <input class="form-control" name="styleName" list="datalistOptions" id="exampleDataList" placeholder="style Music">
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                        <button type="submit" class="btn btn-primary">add</button>
+                                    </div>
+                                </form>
                             </div>
                         </div>
                     </div>
-                    <table class="table">
+                    <table class="table w-50">
                         <thead>
                             <tr>
                                 <th scope="col">#</th>
@@ -84,12 +86,15 @@
                             </tr>
                         </thead>
                         <tbody>
-                            <tr>
-                                <th scope="row">1</th>
-                                <td>Mark</td>
+                            <?php foreach ($styles as $style) {
 
-                            </tr>
+                            ?>
+                                <tr>
+                                    <th scope="row"><?= $style["idStyle"] ?></th>
+                                    <td><?= $style["nomStyle"] ?></td>
 
+                                </tr>
+                            <?php    } ?>
 
                         </tbody>
                     </table>

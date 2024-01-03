@@ -3,8 +3,9 @@
 declare(strict_types=1);
 
 use App\Config\Paths;
+use App\Services\StylesService;
 use App\Services\TestService;
-use App\Services\ValidatorService;
+
 use Framework\Container;
 use Framework\Database;
 use Framework\TemplateEngine;
@@ -19,10 +20,10 @@ return [
         'dbname' => $_ENV['DB_NAME']
     ], $_ENV['DB_USER'], $_ENV["DB_PASS"]),
 
-    ValidatorService::class => function (Container $container) {
+    StylesService::class => function (Container $container) {
         $db = $container->get(Database::class);
 
-        return new ValidatorService($db);
+        return new StylesService($db);
     },
     TestService::class => function (Container $container) {
         $db = $container->get(Database::class);

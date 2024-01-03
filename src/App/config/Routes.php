@@ -40,8 +40,10 @@ function registerRoutes(App $app)
     $app->get('/admin-c', [AdminCl::class, 'index']);
     $app->get('/admin-a', [AdminAr::class, 'index']);
     $app->get('/adminNot', [AdminNot::class, 'index']);
+
+    //Style Controllers
     $app->get('/admin-s', [StylesController::class, 'index']);
-    $app->get('/admin-s/{transaction}', [StylesController::class, 'view']);
+    $app->post('/admin-s', [StylesController::class, 'insertStyle']);
 
 
 
