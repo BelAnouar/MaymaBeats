@@ -15,5 +15,5 @@ $app = new App(Paths::SOURCE . "app/container-definitions.php");
 $dotenv = Dotenv::createImmutable(Paths::ROOT);
 $dotenv->load();
 registerRoutes($app);
-registerMiddleware($app);
+
 return $app;

@@ -8,38 +8,13 @@
 </head>
 
 <body>
-    <button onclick="fetc()">cli</button>
-    <script>
-        // Data to be sent in the POST request
-        const userData = {
-            username: 'testuser',
-            email: 'testuser@example.com',
-            password: 'password123'
-        };
+    <form method="post">
+        <input name="rr" type="text" />
 
-        function fetc() {
-            fetch('http://localhost:3000/public/index.php/signup', {
-                    method: 'POST',
-                    headers: {
-                        'Content-Type': 'application/json',
-                    },
-                    body: JSON.stringify(userData)
-                })
-                .then(response => {
-                    if (response.ok) {
-                        return response.json();
-                    }
-                    throw new Error('Network response was not ok.');
-                })
-                .then(data => {
-                    console.log('Signup successful:', data);
-                })
-                .catch(error => {
-                    console.error('Error during signup:', error);
-                });
-        }
-        // Sending a POST request using fetch
-    </script>
+        <button type="submit">cl</button>
+    </form>
+
+
 </body>
 
 </html>
