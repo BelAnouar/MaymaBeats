@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
 *,
@@ -10,8 +9,8 @@
 body {
     font-family: 'Poppins', sans-serif;
     margin: 0;
-    background-image: url("../img/bg.jpg");
-
+    /* background-image: url("../img/bg.jpg"); */
+    background-color: #000;
     background-repeat: no-repeat;
     background-position: center bottom;
     background-size: cover;
@@ -40,8 +39,13 @@ li {
     width: 100%;
 }
 
-#border 
-    border: 3px solid #400962;
+.h-100 {
+    position: fixed;
+    width: 20%;
+}
+
+#border {
+    border: 3px solid #3f0a5f;
     border-radius: 10px;
 }
 
@@ -126,8 +130,6 @@ a.sidebar-link {
     width: 100vw;
 }
 
-=======
->>>>>>> origin
 /* Only the scroll bar */
 ::-webkit-scrollbar {
     width: .5rem;
@@ -142,24 +144,11 @@ a.sidebar-link {
     background: rgba(0, 0, 0, .3);
 }
 
-<<<<<<< HEAD
 body main {
-=======
-body {
->>>>>>> origin
     overflow-y: scroll;
     scroll-behavior: smooth;
 }
 
-<<<<<<< HEAD
-=======
-
-
-
-
-
-
->>>>>>> origin
 .spotify-playlists {
     padding: 20px 40px;
 }
@@ -175,28 +164,21 @@ body {
     width: 100%;
     gap: 20px;
     flex-wrap: wrap;
-<<<<<<< HEAD
     justify-content: center;
-=======
->>>>>>> origin
 }
 
 .spotify-playlists .list .item {
     min-width: 140px;
-<<<<<<< HEAD
     width: 23%;
-=======
-    width: 160px;
->>>>>>> origin
     padding: 15px;
-    background-color: #1f2937;
+    background-color: #390a4d;
     border-radius: 6px;
     cursor: pointer;
     transition: all ease 0.4s;
 }
 
 .spotify-playlists .list .item:hover {
-    background-color: #252525;
+    background-color: #777777;
 }
 
 .spotify-playlists .list .item img {
@@ -214,11 +196,7 @@ body {
     right: 10px;
     top: -60px;
     padding: 18px;
-<<<<<<< HEAD
     background-color: #7019a9;
-=======
-    background-color: #BC6FF1;
->>>>>>> origin
     border-radius: 100%;
     opacity: 0;
     transition: all ease 0.4s;
@@ -254,11 +232,7 @@ body {
 .navbar {
     display: flex;
     align-items: center;
-<<<<<<< HEAD
     justify-content: space-between;
-=======
-    justify-content: space-around;
->>>>>>> origin
 }
 
 .navbar ul {
@@ -287,7 +261,6 @@ body {
     transition: ease-in-out .2s;
 }
 
-<<<<<<< HEAD
 .add {
     background-color: #320f48;
     color: #FFF;
@@ -308,43 +281,5 @@ body {
 @media (min-width:768px) {
     .content {
         width: auto;
-=======
-@media screen and (max-width: 768px) {
-    body {
-        overflow-x: hidden;
-    }
-
-    .navbar ul li {
-        width: auto;
-        margin: 0px 5px;
-    }
-
-    .spotify-playlists .list .item {
-        min-width: 120px;
-        width: 45%;
-    }
-
-    .spotify-playlists .list {
-        gap: 10px;
-    }
-}
-
-/* For even smaller screens, adjust layout further */
-@media screen and (max-width: 480px) {
-    .navbar {
-        flex-direction: column;
-        align-items: stretch;
-    }
-
-    .navbar ul li {
-        margin: 5px 0;
-        width: 100%;
-        text-align: center;
-    }
-
-    .spotify-playlists .list .item {
-        min-width: 100px;
-        width: 100%;
->>>>>>> origin
     }
 }

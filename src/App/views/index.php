@@ -15,7 +15,7 @@
     <div class="wrapper">
         <aside id="sidebar">
             <div class="h-100">
-                <div class="sidebar-logo" style="margin-top: -9%;">
+                <div class="sidebar-logo">
                     <img src="../../../public/assets/img/logo.png" alt="" style="width: 65%; margin-left: -20%; ">
                     <a href="#" style="margin-left: -15%;">MaymaBeats</a>
                 </div>
@@ -71,7 +71,7 @@
                             <div id="plan"></div>
                             <div class="px-6 py-8">
                                 <div class="max-w-4xl mx-auto" id="home">
-                                    <div class="bg-blur-3xl rounded-3xl p-8 mb-5" id="border">
+                                    <div class="bg-dark rounded-3xl p-8 mb-5" id="border">
                                         <div class="d-flex justify-content-between">
                                             <div>
                                                 <h1 class="mx-5 text-white mt-3 fw-bold">Paroly Playlist</h1>
@@ -120,7 +120,7 @@
                             <div id="plan"></div>
                             <div class="px-6 py-8">
                                 <div class="max-w-4xl mx-auto" id="tendance">
-                                    <div class="bg-blur-3xl rounded-3xl p-8 mb-5" id="border">
+                                    <div class="bg-dark rounded-3xl p-8 mb-5" id="border">
                                         <div class="d-flex justify-content-between">
                                             <div>
                                                 <h1 class="mx-5 text-white mt-3 fw-bold">Tendance</h1>
@@ -167,7 +167,7 @@
                             <div id="plan"></div>
                             <div class="px-6 py-8">
                                 <div class="max-w-4xl mx-auto" id="mood">
-                                    <div class="bg-blur-3xl rounded-3xl p-8 mb-5" id="border">
+                                    <div class="bg-dark rounded-3xl p-8 mb-5" id="border">
                                         <div class="d-flex justify-content-between">
                                             <div>
                                                 <h1 class="mx-5 text-white mt-3 fw-bold">Mood</h1>
@@ -214,7 +214,7 @@
                             <div id="plan"></div>
                             <div class="px-6 py-8">
                                 <div class="max-w-4xl mx-auto">
-                                    <div class="bg-blur-3xl rounded-3xl p-8 mb-5" id="border">
+                                    <div class="bg-dark rounded-3xl p-8 mb-5" id="border">
                                         <div class="d-flex justify-content-between">
                                             <div>
                                                 <h1 class="mx-5 text-white mt-3 fw-bold">ALBUMS</h1>
