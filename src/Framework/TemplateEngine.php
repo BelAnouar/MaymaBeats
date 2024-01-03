@@ -29,6 +29,8 @@ class TemplateEngine
 
     public function resolve(string $path)
     {
+
+
         return "{$this->basePath}/{$path}";
     }
     public function  addGlobal(string $key, mixed $value)
