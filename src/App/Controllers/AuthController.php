@@ -19,8 +19,10 @@ class AuthController
     {
         echo $this->view->render("/signup.php");
     }
-    public function  register()
+
+    public function post()
     {
-        $this->validate->validateRegister($_POST);
+
+        $this->validate->create($_POST);
     }
 }
