@@ -37,18 +37,15 @@ class Router
 
     foreach ($this->routes as $route) {
       if (
-<<<<<<< HEAD
         !preg_match("#^{$route['regexPath']}$#", $path, $paramValues) ||
-=======
 
         !preg_match("#^{$route['path']}$#", $path) ||
->>>>>>> oumaima
         $route['method'] !== $method
       ) {
         continue;
       }
 
-<<<<<<< HEAD
+
 
       array_shift($paramValues);
 
@@ -58,8 +55,7 @@ class Router
 
       $params = array_combine($paramKeys, $paramValues);
 
-=======
->>>>>>> oumaima
+
       [$class, $function] = $route['controller'];
 
       $controllerInstance = $container ?
