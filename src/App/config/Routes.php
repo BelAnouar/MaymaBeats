@@ -6,15 +6,15 @@ declare(strict_types=1);
 
 namespace App\Config;
 
-<<<<<<< HEAD
+
 use App\Controllers\AdminAr;
 use App\Controllers\AdminCl;
 use App\Controllers\AdminController;
 use App\Controllers\AdminNot;
-=======
+
 use App\Controllers\ArtistsConrtoller;
 use App\Controllers\YassineController;
->>>>>>> 2e04b579211e3523d990f624e15c597b88f0c967
+
 use Framework\App;
 use App\Controllers\HomeController;
 
