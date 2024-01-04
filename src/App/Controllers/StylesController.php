@@ -4,7 +4,7 @@ declare(strict_types=1);
 
 namespace App\Controllers;
 
-
+use App\Services\StylesService;
 use Framework\TemplateEngine;
 
 
@@ -13,15 +13,18 @@ class StylesController
 
 
 
-    public function __construct(private TemplateEngine $view)
+    public function __construct(private TemplateEngine $view, private StylesService $style)
     {
     }
     public function index()
     {
-        echo $this->view->render("/admin-s.php");
+        $rest = $this->style->getStyles();
+        echo $this->view->render("/admin-s.php", ["styles" => $rest]);
     }
-    public function view(array $l)
+    public function insertStyle()
     {
-        dd($l["transaction"]);
+
+        $this->style->create($_POST);
+        header("Location:admin-s");
     }
 }

@@ -25,15 +25,9 @@ class Router
     $path = trim($path, '/');
     $path = "/{$path}/";
     $path = preg_replace('#[/]{2,}#', '/', $path);
-<<<<<<< HEAD
-<<<<<<< HEAD
+
     $path = str_replace("/MaymaBeats/public/index.php/", "/", $path);
-=======
-    $path = str_replace("/maymabeats/public/index.php/", "/", $path);
->>>>>>> 2e04b579211e3523d990f624e15c597b88f0c967
-=======
-    $path = str_replace("/MaymaBeats/public/index.php/", "/", $path);
->>>>>>> de362ca00ce010dda243ad8cd291bd2772a58c23
+
 
     return $path;
   }
@@ -46,10 +40,14 @@ class Router
     foreach ($this->routes as $route) {
       if (
         !preg_match("#^{$route['regexPath']}$#", $path, $paramValues) ||
+
+        !preg_match("#^{$route['path']}$#", $path) ||
         $route['method'] !== $method
       ) {
         continue;
       }
+
+
 
 
       array_shift($paramValues);
@@ -59,6 +57,7 @@ class Router
       $paramKeys = $paramKeys[1];
 
       $params = array_combine($paramKeys, $paramValues);
+
 
       [$class, $function] = $route['controller'];
 

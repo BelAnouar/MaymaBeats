@@ -3,10 +3,9 @@
 declare(strict_types=1);
 
 use App\Config\Paths;
-use app\Services\parole;
 use app\Services\Reactionmodel;
 use App\Services\TestService;
-use App\Services\ValidatorService;
+
 use Framework\Container;
 use Framework\Database;
 use Framework\TemplateEngine;
@@ -21,25 +20,21 @@ return [
         'dbname' => $_ENV['DB_NAME']
     ], $_ENV['DB_USER'], $_ENV["DB_PASS"]),
 
-    ValidatorService::class => function (Container $container) {
+    StylesService::class => function (Container $container) {
         $db = $container->get(Database::class);
 
-        return new ValidatorService($db);
+        return new StylesService($db);
     },
     TestService::class => function (Container $container) {
         $db = $container->get(Database::class);
 
         return new TestService($db);
     },
-    Reactionmodel::class => function (Container $container) {
+    artisteModal::class => function (Container $container) {
         $db = $container->get(Database::class);
 
         return new Reactionmodel($db);
-    },
-    parole::class => function (Container $container) {
-        $db = $container->get(Database::class);
-
-        return new parole($db);
     }
+
 
 ];

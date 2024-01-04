@@ -8,7 +8,7 @@ namespace App\Services;
 
 use Framework\Database;
 
-class ValidatorService
+class StylesService
 {
 
 
@@ -17,15 +17,20 @@ class ValidatorService
     {
     }
 
+    public  function getStyles()
+    {
+
+        $result =  $this->db->query("SELECT * FROM `styles`")->findAll();
+        return $result;
+    }
     public  function create(array $formData)
     {
-        $val = $formData["rr"];
+        $styleName = $formData["styleName"];
         $this->db->query(
             "INSERT INTO styles(nomStyle)
-            VALUES(:val)",
+            VALUES(:nomStyle)",
             [
-                'val' => $val
-
+                'nomStyle' => $styleName
             ]
         );
     }

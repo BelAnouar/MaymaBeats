@@ -6,6 +6,8 @@ declare(strict_types=1);
 
 namespace App\Config;
 
+
+use App\Controllers\ArtisteConrtoller;
 use Framework\App;
 use App\Controllers\ArtistsConrtoller;
 use App\Controllers\YassineController;
@@ -32,7 +34,6 @@ function registerRoutes(App $app)
     $app->get('/login', [LoginController::class, 'index']);
     $app->get('/signup', [AuthController::class, 'index']);
     $app->post('/signup', [AuthController::class, 'post']);
-    $app->get('/artis', [ArtistsConrtoller::class, 'index']);
     $app->get('/yassine', [YassineController::class, 'index']);
     $app->get('/salah', [SalahController::class, 'index']);
     $app->get('/profile', [profilecontroller::class, 'index']);
@@ -42,8 +43,26 @@ function registerRoutes(App $app)
     $app->get('/admin-c', [AdminCl::class, 'index']);
     $app->get('/admin-a', [AdminAr::class, 'index']);
     $app->get('/adminNot', [AdminNot::class, 'index']);
+
+    //Style Controllers
     $app->get('/admin-s', [StylesController::class, 'index']);
+
+    $app->post('/admin-s', [StylesController::class, 'insertStyle']);
+
+
+
+
     $app->get('/admin-s/{transaction}', [StylesController::class, 'view']);
+
+    $app->get("/test", [TestController::class, "index"]);
+    $app->get('/test/{anouar}', [TestController::class, "aff"]);
+    $app->post("/test", [TestController::class, "post"]);
+
+    $app->post('/artiste', [ArtisteConrtoller::class, "addAlbum"]);
+    $app->get('/artiste', [ArtisteConrtoller::class, "index"]);
+
+
+
     $app->get("/test", [TestController::class, "index"]);
     $app->get('/test/{anouar}', [TestController::class, "aff"]);
     $app->post("/test", [TestController::class, "post"]);
@@ -59,7 +78,4 @@ function registerRoutes(App $app)
     //routes pour ajouter et supprimer paroles
     $app->get("/client", [parolecontroller::class, "addlyrics"]);
     $app->post("/client", [parolecontroller::class, "deletelyrics"]);
-
-
-
 }

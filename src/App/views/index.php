@@ -105,344 +105,364 @@
     </aside>
 
     <main class="ml-60 pt-16 max-h-screen overflow-auto">
-        <div class="px-6 py-8">
+        <<<<<<< HEAD <div class="px-6 py-8">
             <div class="max-w-4xl mx-auto">
                 <div id="plan"></div>
-                <div class="backdrop-blur-3xl bg-black rounded-3xl border-[#BC6FF1] border-2 p-8 mb-5">
-                    <h1 class="text-3xl font-bold mb-10 text-white">Paroly Playlists</h1>
-                    <hr class="my-10">
+                =======
+                <nav class="navbar navbar-expand px-3 border-bottom">
+                    <!-- Button for sidebar toggle -->
+                    <button class="btn" type="button" data-bs-theme="dark">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                </nav>
+                <div id="plan"></div>
+                <div class="px-6 py-8">
+                    <div class="max-w-4xl mx-auto">
+                        >>>>>>> yassine
+                        <div class="backdrop-blur-3xl bg-black rounded-3xl border-[#BC6FF1] border-2 p-8 mb-5">
+                            <h1 class="text-3xl font-bold mb-10 text-white">Paroly Playlists</h1>
+                            <hr class="my-10">
 
-                    <div class="grid grid gap-x-20">
-                        <div class="spotify-playlists">
-                            <div class="list">
-                                <div class="item">
-                                    <img src="https://i.scdn.co/image/ab67616d0000b2733b5e11ca1b063583df9492db" />
-                                    <div class="play">
-                                        <span class="fa fa-play"></span>
+                            <div class="grid grid gap-x-20">
+                                <div class="spotify-playlists">
+                                    <div class="list">
+                                        <div class="item">
+                                            <img src="https://i.scdn.co/image/ab67616d0000b2733b5e11ca1b063583df9492db" />
+                                            <div class="play">
+                                                <span class="fa fa-play"></span>
+                                            </div>
+                                            <h4>Today's Top Hits</h4>
+                                            <p>Rema & Selena Gomez are on top of the...</p>
+                                        </div>
+
+                                        <div class="item">
+                                            <img src="https://i.scdn.co/image/ab67616d0000b2733b5e11ca1b063583df9492db" />
+                                            <div class="play">
+                                                <span class="fa fa-play"></span>
+                                            </div>
+                                            <h4>RapCaviar</h4>
+                                            <p>New Music from Lil Baby, Juice WRLD an...</p>
+                                        </div>
+
+                                        <div class="item">
+                                            <img src="https://i.scdn.co/image/ab67616d0000b2733b5e11ca1b063583df9492db" />
+                                            <div class="play">
+                                                <span class="fa fa-play"></span>
+                                            </div>
+                                            <h4>All out 2010s</h4>
+                                            <p>The biggest spmgs pf tje 2010s. Cover:...</p>
+                                        </div>
+
+                                        <div class="item">
+                                            <img src="https://i.scdn.co/image/ab67616d0000b2733b5e11ca1b063583df9492db" />
+                                            <div class="play">
+                                                <span class="fa fa-play"></span>
+                                            </div>
+                                            <h4>Rock Classics</h4>
+                                            <p>Rock Legends & epic songs that continue t...</p>
+                                        </div>
+
+                                        <div class="item">
+                                            <img src="https://i.scdn.co/image/ab67616d0000b2733b5e11ca1b063583df9492db" />
+                                            <div class="play">
+                                                <span class="fa fa-play"></span>
+                                            </div>
+                                            <h4>Chill Hits</h4>
+                                            <p>Kick back to the best new and recent chill...</p>
+                                        </div>
+
+                                        <div class="item">
+                                            <img src="https://i.scdn.co/image/ab67616d0000b2733b5e11ca1b063583df9492db" />
+                                            <div class="play">
+                                                <span class="fa fa-play"></span>
+                                            </div>
+                                            <h4>Viva Latino</h4>
+                                            <p>Today's top Latin hits elevando nuestra...</p>
+                                        </div>
+
+                                        <div class="item">
+                                            <img src="https://i.scdn.co/image/ab67616d0000b2733b5e11ca1b063583df9492db" />
+                                            <div class="play">
+                                                <span class="fa fa-play"></span>
+                                            </div>
+                                            <h4>Mega Hit Mix</h4>
+                                            <p>A mega mix of 75 favorites from the last...</p>
+                                        </div>
+
+                                        <div class="item">
+                                            <img src="https://i.scdn.co/image/ab67616d0000b2733b5e11ca1b063583df9492db" />
+                                            <div class="play">
+                                                <span class="fa fa-play"></span>
+                                            </div>
+                                            <h4>All out 80s</h4>
+                                            <p>The biggest songs of the 1090s.</p>
+                                        </div>
                                     </div>
-                                    <h4>Today's Top Hits</h4>
-                                    <p>Rema & Selena Gomez are on top of the...</p>
                                 </div>
+                            </div>
+                        </div>
+                        <div id="list" class="h-10"></div>
+                        <div class="backdrop-blur-3xl bg-black rounded-3xl border-[#BC6FF1] border-2 p-8 mb-5">
+                            <h1 class="text-3xl font-bold mb-10 text-white">Tendance</h1>
+                            <hr class="my-10">
 
-                                <div class="item">
-                                    <img src="https://i.scdn.co/image/ab67616d0000b2733b5e11ca1b063583df9492db" />
-                                    <div class="play">
-                                        <span class="fa fa-play"></span>
+                            <div class="grid grid gap-x-20">
+                                <div class="spotify-playlists">
+                                    <div class="list">
+                                        <div class="item">
+                                            <img src="https://i.scdn.co/image/ab67616d0000b2733b5e11ca1b063583df9492db" />
+                                            <div class="play">
+                                                <span class="fa fa-play"></span>
+                                            </div>
+                                            <h4>Today's Top Hits</h4>
+                                            <p>Rema & Selena Gomez are on top of the...</p>
+                                        </div>
+
+                                        <div class="item">
+                                            <img src="https://i.scdn.co/image/ab67616d0000b2733b5e11ca1b063583df9492db" />
+                                            <div class="play">
+                                                <span class="fa fa-play"></span>
+                                            </div>
+                                            <h4>RapCaviar</h4>
+                                            <p>New Music from Lil Baby, Juice WRLD an...</p>
+                                        </div>
+
+                                        <div class="item">
+                                            <img src="https://i.scdn.co/image/ab67616d0000b2733b5e11ca1b063583df9492db" />
+                                            <div class="play">
+                                                <span class="fa fa-play"></span>
+                                            </div>
+                                            <h4>All out 2010s</h4>
+                                            <p>The biggest spmgs pf tje 2010s. Cover:...</p>
+                                        </div>
+
+                                        <div class="item">
+                                            <img src="https://i.scdn.co/image/ab67616d0000b2733b5e11ca1b063583df9492db" />
+                                            <div class="play">
+                                                <span class="fa fa-play"></span>
+                                            </div>
+                                            <h4>Rock Classics</h4>
+                                            <p>Rock Legends & epic songs that continue t...</p>
+                                        </div>
+
+                                        <div class="item">
+                                            <img src="https://i.scdn.co/image/ab67616d0000b2733b5e11ca1b063583df9492db" />
+                                            <div class="play">
+                                                <span class="fa fa-play"></span>
+                                            </div>
+                                            <h4>Chill Hits</h4>
+                                            <p>Kick back to the best new and recent chill...</p>
+                                        </div>
+
+                                        <div class="item">
+                                            <img src="https://i.scdn.co/image/ab67616d0000b2733b5e11ca1b063583df9492db" />
+                                            <div class="play">
+                                                <span class="fa fa-play"></span>
+                                            </div>
+                                            <h4>Viva Latino</h4>
+                                            <p>Today's top Latin hits elevando nuestra...</p>
+                                        </div>
+
+                                        <div class="item">
+                                            <img src="https://i.scdn.co/image/ab67616d0000b2733b5e11ca1b063583df9492db" />
+                                            <div class="play">
+                                                <span class="fa fa-play"></span>
+                                            </div>
+                                            <h4>Mega Hit Mix</h4>
+                                            <p>A mega mix of 75 favorites from the last...</p>
+                                        </div>
+
+                                        <div class="item">
+                                            <img src="https://i.scdn.co/image/ab67616d0000b2733b5e11ca1b063583df9492db" />
+                                            <div class="play">
+                                                <span class="fa fa-play"></span>
+                                            </div>
+                                            <h4>All out 80s</h4>
+                                            <p>The biggest songs of the 1090s.</p>
+                                        </div>
                                     </div>
-                                    <h4>RapCaviar</h4>
-                                    <p>New Music from Lil Baby, Juice WRLD an...</p>
                                 </div>
+                            </div>
+                        </div>
+                        <div id="projet" class="h-10"></div>
+                        <div class="backdrop-blur-3xl bg-black rounded-3xl border-[#BC6FF1] border-2 p-8 mb-5">
+                            <h1 class="text-3xl font-bold mb-10 text-white">Mood</h1>
+                            <hr class="my-10">
 
-                                <div class="item">
-                                    <img src="https://i.scdn.co/image/ab67616d0000b2733b5e11ca1b063583df9492db" />
-                                    <div class="play">
-                                        <span class="fa fa-play"></span>
+                            <div class="grid grid gap-x-20">
+                                <div class="spotify-playlists">
+                                    <div class="list">
+                                        <div class="item">
+                                            <img src="https://i.scdn.co/image/ab67616d0000b2733b5e11ca1b063583df9492db" />
+                                            <div class="play">
+                                                <span class="fa fa-play"></span>
+                                            </div>
+                                            <h4>Today's Top Hits</h4>
+                                            <p>Rema & Selena Gomez are on top of the...</p>
+                                        </div>
+
+                                        <div class="item">
+                                            <img src="https://i.scdn.co/image/ab67616d0000b2733b5e11ca1b063583df9492db" />
+                                            <div class="play">
+                                                <span class="fa fa-play"></span>
+                                            </div>
+                                            <h4>RapCaviar</h4>
+                                            <p>New Music from Lil Baby, Juice WRLD an...</p>
+                                        </div>
+
+                                        <div class="item">
+                                            <img src="https://i.scdn.co/image/ab67616d0000b2733b5e11ca1b063583df9492db" />
+                                            <div class="play">
+                                                <span class="fa fa-play"></span>
+                                            </div>
+                                            <h4>All out 2010s</h4>
+                                            <p>The biggest spmgs pf tje 2010s. Cover:...</p>
+                                        </div>
+
+                                        <div class="item">
+                                            <img src="https://i.scdn.co/image/ab67616d0000b2733b5e11ca1b063583df9492db" />
+                                            <div class="play">
+                                                <span class="fa fa-play"></span>
+                                            </div>
+                                            <h4>Rock Classics</h4>
+                                            <p>Rock Legends & epic songs that continue t...</p>
+                                        </div>
+
+                                        <div class="item">
+                                            <img src="https://i.scdn.co/image/ab67616d0000b2733b5e11ca1b063583df9492db" />
+                                            <div class="play">
+                                                <span class="fa fa-play"></span>
+                                            </div>
+                                            <h4>Chill Hits</h4>
+                                            <p>Kick back to the best new and recent chill...</p>
+                                        </div>
+
+                                        <div class="item">
+                                            <img src="https://i.scdn.co/image/ab67616d0000b2733b5e11ca1b063583df9492db" />
+                                            <div class="play">
+                                                <span class="fa fa-play"></span>
+                                            </div>
+                                            <h4>Viva Latino</h4>
+                                            <p>Today's top Latin hits elevando nuestra...</p>
+                                        </div>
+
+                                        <div class="item">
+                                            <img src="https://i.scdn.co/image/ab67616d0000b2733b5e11ca1b063583df9492db" />
+                                            <div class="play">
+                                                <span class="fa fa-play"></span>
+                                            </div>
+                                            <h4>Mega Hit Mix</h4>
+                                            <p>A mega mix of 75 favorites from the last...</p>
+                                        </div>
+
+                                        <div class="item">
+                                            <img src="https://i.scdn.co/image/ab67616d0000b2733b5e11ca1b063583df9492db" />
+                                            <div class="play">
+                                                <span class="fa fa-play"></span>
+                                            </div>
+                                            <h4>All out 80s</h4>
+                                            <p>The biggest songs of the 1090s.</p>
+                                        </div>
                                     </div>
-                                    <h4>All out 2010s</h4>
-                                    <p>The biggest spmgs pf tje 2010s. Cover:...</p>
                                 </div>
+                            </div>
+                        </div>
+                        <div id="tag" class="h-10"></div>
+                        <div class="backdrop-blur-3xl bg-black rounded-3xl border-[#BC6FF1] border-2 p-8 mb-5">
+                            <h1 class="text-3xl font-bold mb-10 text-white">Your playlist</h1>
+                            <hr class="my-10">
 
-                                <div class="item">
-                                    <img src="https://i.scdn.co/image/ab67616d0000b2733b5e11ca1b063583df9492db" />
-                                    <div class="play">
-                                        <span class="fa fa-play"></span>
-                                    </div>
-                                    <h4>Rock Classics</h4>
-                                    <p>Rock Legends & epic songs that continue t...</p>
-                                </div>
+                            <div class="grid grid gap-x-20">
+                                <div class="spotify-playlists">
+                                    <div class="list">
+                                        <div class="item">
+                                            <img src="https://i.scdn.co/image/ab67616d0000b2733b5e11ca1b063583df9492db" />
+                                            <div class="play">
+                                                <span class="fa fa-play"></span>
+                                            </div>
+                                            <h4>Today's Top Hits</h4>
+                                            <p>Rema & Selena Gomez are on top of the...</p>
+                                        </div>
 
-                                <div class="item">
-                                    <img src="https://i.scdn.co/image/ab67616d0000b2733b5e11ca1b063583df9492db" />
-                                    <div class="play">
-                                        <span class="fa fa-play"></span>
-                                    </div>
-                                    <h4>Chill Hits</h4>
-                                    <p>Kick back to the best new and recent chill...</p>
-                                </div>
+                                        <div class="item">
+                                            <img src="https://i.scdn.co/image/ab67616d0000b2733b5e11ca1b063583df9492db" />
+                                            <div class="play">
+                                                <span class="fa fa-play"></span>
+                                            </div>
+                                            <h4>RapCaviar</h4>
+                                            <p>New Music from Lil Baby, Juice WRLD an...</p>
+                                        </div>
 
-                                <div class="item">
-                                    <img src="https://i.scdn.co/image/ab67616d0000b2733b5e11ca1b063583df9492db" />
-                                    <div class="play">
-                                        <span class="fa fa-play"></span>
-                                    </div>
-                                    <h4>Viva Latino</h4>
-                                    <p>Today's top Latin hits elevando nuestra...</p>
-                                </div>
+                                        <div class="item">
+                                            <img src="https://i.scdn.co/image/ab67616d0000b2733b5e11ca1b063583df9492db" />
+                                            <div class="play">
+                                                <span class="fa fa-play"></span>
+                                            </div>
+                                            <h4>All out 2010s</h4>
+                                            <p>The biggest spmgs pf tje 2010s. Cover:...</p>
+                                        </div>
 
-                                <div class="item">
-                                    <img src="https://i.scdn.co/image/ab67616d0000b2733b5e11ca1b063583df9492db" />
-                                    <div class="play">
-                                        <span class="fa fa-play"></span>
-                                    </div>
-                                    <h4>Mega Hit Mix</h4>
-                                    <p>A mega mix of 75 favorites from the last...</p>
-                                </div>
+                                        <div class="item">
+                                            <img src="https://i.scdn.co/image/ab67616d0000b2733b5e11ca1b063583df9492db" />
+                                            <div class="play">
+                                                <span class="fa fa-play"></span>
+                                            </div>
+                                            <h4>Rock Classics</h4>
+                                            <p>Rock Legends & epic songs that continue t...</p>
+                                        </div>
 
-                                <div class="item">
-                                    <img src="https://i.scdn.co/image/ab67616d0000b2733b5e11ca1b063583df9492db" />
-                                    <div class="play">
-                                        <span class="fa fa-play"></span>
+                                        <div class="item">
+                                            <img src="https://i.scdn.co/image/ab67616d0000b2733b5e11ca1b063583df9492db" />
+                                            <div class="play">
+                                                <span class="fa fa-play"></span>
+                                            </div>
+                                            <h4>Chill Hits</h4>
+                                            <p>Kick back to the best new and recent chill...</p>
+                                        </div>
+
+                                        <div class="item">
+                                            <img src="https://i.scdn.co/image/ab67616d0000b2733b5e11ca1b063583df9492db" />
+                                            <div class="play">
+                                                <span class="fa fa-play"></span>
+                                            </div>
+                                            <h4>Viva Latino</h4>
+                                            <p>Today's top Latin hits elevando nuestra...</p>
+                                        </div>
+
+                                        <div class="item">
+                                            <img src="https://i.scdn.co/image/ab67616d0000b2733b5e11ca1b063583df9492db" />
+                                            <div class="play">
+                                                <span class="fa fa-play"></span>
+                                            </div>
+                                            <h4>Mega Hit Mix</h4>
+                                            <p>A mega mix of 75 favorites from the last...</p>
+                                        </div>
+
+                                        <div class="item">
+                                            <img src="https://i.scdn.co/image/ab67616d0000b2733b5e11ca1b063583df9492db" />
+                                            <div class="play">
+                                                <span class="fa fa-play"></span>
+                                            </div>
+                                            <h4>All out 80s</h4>
+                                            <p>The biggest songs of the 1090s.</p>
+                                        </div>
                                     </div>
-                                    <h4>All out 80s</h4>
-                                    <p>The biggest songs of the 1090s.</p>
                                 </div>
                             </div>
                         </div>
                     </div>
+                    <footer>
+
+                    </footer>
                 </div>
-                <div id="list" class="h-10"></div>
-                <div class="backdrop-blur-3xl bg-black rounded-3xl border-[#BC6FF1] border-2 p-8 mb-5">
-                    <h1 class="text-3xl font-bold mb-10 text-white">Tendance</h1>
-                    <hr class="my-10">
-
-                    <div class="grid grid gap-x-20">
-                        <div class="spotify-playlists">
-                            <div class="list">
-                                <div class="item">
-                                    <img src="https://i.scdn.co/image/ab67616d0000b2733b5e11ca1b063583df9492db" />
-                                    <div class="play">
-                                        <span class="fa fa-play"></span>
-                                    </div>
-                                    <h4>Today's Top Hits</h4>
-                                    <p>Rema & Selena Gomez are on top of the...</p>
-                                </div>
-
-                                <div class="item">
-                                    <img src="https://i.scdn.co/image/ab67616d0000b2733b5e11ca1b063583df9492db" />
-                                    <div class="play">
-                                        <span class="fa fa-play"></span>
-                                    </div>
-                                    <h4>RapCaviar</h4>
-                                    <p>New Music from Lil Baby, Juice WRLD an...</p>
-                                </div>
-
-                                <div class="item">
-                                    <img src="https://i.scdn.co/image/ab67616d0000b2733b5e11ca1b063583df9492db" />
-                                    <div class="play">
-                                        <span class="fa fa-play"></span>
-                                    </div>
-                                    <h4>All out 2010s</h4>
-                                    <p>The biggest spmgs pf tje 2010s. Cover:...</p>
-                                </div>
-
-                                <div class="item">
-                                    <img src="https://i.scdn.co/image/ab67616d0000b2733b5e11ca1b063583df9492db" />
-                                    <div class="play">
-                                        <span class="fa fa-play"></span>
-                                    </div>
-                                    <h4>Rock Classics</h4>
-                                    <p>Rock Legends & epic songs that continue t...</p>
-                                </div>
-
-                                <div class="item">
-                                    <img src="https://i.scdn.co/image/ab67616d0000b2733b5e11ca1b063583df9492db" />
-                                    <div class="play">
-                                        <span class="fa fa-play"></span>
-                                    </div>
-                                    <h4>Chill Hits</h4>
-                                    <p>Kick back to the best new and recent chill...</p>
-                                </div>
-
-                                <div class="item">
-                                    <img src="https://i.scdn.co/image/ab67616d0000b2733b5e11ca1b063583df9492db" />
-                                    <div class="play">
-                                        <span class="fa fa-play"></span>
-                                    </div>
-                                    <h4>Viva Latino</h4>
-                                    <p>Today's top Latin hits elevando nuestra...</p>
-                                </div>
-
-                                <div class="item">
-                                    <img src="https://i.scdn.co/image/ab67616d0000b2733b5e11ca1b063583df9492db" />
-                                    <div class="play">
-                                        <span class="fa fa-play"></span>
-                                    </div>
-                                    <h4>Mega Hit Mix</h4>
-                                    <p>A mega mix of 75 favorites from the last...</p>
-                                </div>
-
-                                <div class="item">
-                                    <img src="https://i.scdn.co/image/ab67616d0000b2733b5e11ca1b063583df9492db" />
-                                    <div class="play">
-                                        <span class="fa fa-play"></span>
-                                    </div>
-                                    <h4>All out 80s</h4>
-                                    <p>The biggest songs of the 1090s.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div id="projet" class="h-10"></div>
-                <div class="backdrop-blur-3xl bg-black rounded-3xl border-[#BC6FF1] border-2 p-8 mb-5">
-                    <h1 class="text-3xl font-bold mb-10 text-white">Mood</h1>
-                    <hr class="my-10">
-
-                    <div class="grid grid gap-x-20">
-                        <div class="spotify-playlists">
-                            <div class="list">
-                                <div class="item">
-                                    <img src="https://i.scdn.co/image/ab67616d0000b2733b5e11ca1b063583df9492db" />
-                                    <div class="play">
-                                        <span class="fa fa-play"></span>
-                                    </div>
-                                    <h4>Today's Top Hits</h4>
-                                    <p>Rema & Selena Gomez are on top of the...</p>
-                                </div>
-
-                                <div class="item">
-                                    <img src="https://i.scdn.co/image/ab67616d0000b2733b5e11ca1b063583df9492db" />
-                                    <div class="play">
-                                        <span class="fa fa-play"></span>
-                                    </div>
-                                    <h4>RapCaviar</h4>
-                                    <p>New Music from Lil Baby, Juice WRLD an...</p>
-                                </div>
-
-                                <div class="item">
-                                    <img src="https://i.scdn.co/image/ab67616d0000b2733b5e11ca1b063583df9492db" />
-                                    <div class="play">
-                                        <span class="fa fa-play"></span>
-                                    </div>
-                                    <h4>All out 2010s</h4>
-                                    <p>The biggest spmgs pf tje 2010s. Cover:...</p>
-                                </div>
-
-                                <div class="item">
-                                    <img src="https://i.scdn.co/image/ab67616d0000b2733b5e11ca1b063583df9492db" />
-                                    <div class="play">
-                                        <span class="fa fa-play"></span>
-                                    </div>
-                                    <h4>Rock Classics</h4>
-                                    <p>Rock Legends & epic songs that continue t...</p>
-                                </div>
-
-                                <div class="item">
-                                    <img src="https://i.scdn.co/image/ab67616d0000b2733b5e11ca1b063583df9492db" />
-                                    <div class="play">
-                                        <span class="fa fa-play"></span>
-                                    </div>
-                                    <h4>Chill Hits</h4>
-                                    <p>Kick back to the best new and recent chill...</p>
-                                </div>
-
-                                <div class="item">
-                                    <img src="https://i.scdn.co/image/ab67616d0000b2733b5e11ca1b063583df9492db" />
-                                    <div class="play">
-                                        <span class="fa fa-play"></span>
-                                    </div>
-                                    <h4>Viva Latino</h4>
-                                    <p>Today's top Latin hits elevando nuestra...</p>
-                                </div>
-
-                                <div class="item">
-                                    <img src="https://i.scdn.co/image/ab67616d0000b2733b5e11ca1b063583df9492db" />
-                                    <div class="play">
-                                        <span class="fa fa-play"></span>
-                                    </div>
-                                    <h4>Mega Hit Mix</h4>
-                                    <p>A mega mix of 75 favorites from the last...</p>
-                                </div>
-
-                                <div class="item">
-                                    <img src="https://i.scdn.co/image/ab67616d0000b2733b5e11ca1b063583df9492db" />
-                                    <div class="play">
-                                        <span class="fa fa-play"></span>
-                                    </div>
-                                    <h4>All out 80s</h4>
-                                    <p>The biggest songs of the 1090s.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div id="tag" class="h-10"></div>
-                <div class="backdrop-blur-3xl bg-black rounded-3xl border-[#BC6FF1] border-2 p-8 mb-5">
-                    <h1 class="text-3xl font-bold mb-10 text-white">Your playlist</h1>
-                    <hr class="my-10">
-
-                    <div class="grid grid gap-x-20">
-                        <div class="spotify-playlists">
-                            <div class="list">
-                                <div class="item">
-                                    <img src="https://i.scdn.co/image/ab67616d0000b2733b5e11ca1b063583df9492db" />
-                                    <div class="play">
-                                        <span class="fa fa-play"></span>
-                                    </div>
-                                    <h4>Today's Top Hits</h4>
-                                    <p>Rema & Selena Gomez are on top of the...</p>
-                                </div>
-
-                                <div class="item">
-                                    <img src="https://i.scdn.co/image/ab67616d0000b2733b5e11ca1b063583df9492db" />
-                                    <div class="play">
-                                        <span class="fa fa-play"></span>
-                                    </div>
-                                    <h4>RapCaviar</h4>
-                                    <p>New Music from Lil Baby, Juice WRLD an...</p>
-                                </div>
-
-                                <div class="item">
-                                    <img src="https://i.scdn.co/image/ab67616d0000b2733b5e11ca1b063583df9492db" />
-                                    <div class="play">
-                                        <span class="fa fa-play"></span>
-                                    </div>
-                                    <h4>All out 2010s</h4>
-                                    <p>The biggest spmgs pf tje 2010s. Cover:...</p>
-                                </div>
-
-                                <div class="item">
-                                    <img src="https://i.scdn.co/image/ab67616d0000b2733b5e11ca1b063583df9492db" />
-                                    <div class="play">
-                                        <span class="fa fa-play"></span>
-                                    </div>
-                                    <h4>Rock Classics</h4>
-                                    <p>Rock Legends & epic songs that continue t...</p>
-                                </div>
-
-                                <div class="item">
-                                    <img src="https://i.scdn.co/image/ab67616d0000b2733b5e11ca1b063583df9492db" />
-                                    <div class="play">
-                                        <span class="fa fa-play"></span>
-                                    </div>
-                                    <h4>Chill Hits</h4>
-                                    <p>Kick back to the best new and recent chill...</p>
-                                </div>
-
-                                <div class="item">
-                                    <img src="https://i.scdn.co/image/ab67616d0000b2733b5e11ca1b063583df9492db" />
-                                    <div class="play">
-                                        <span class="fa fa-play"></span>
-                                    </div>
-                                    <h4>Viva Latino</h4>
-                                    <p>Today's top Latin hits elevando nuestra...</p>
-                                </div>
-
-                                <div class="item">
-                                    <img src="https://i.scdn.co/image/ab67616d0000b2733b5e11ca1b063583df9492db" />
-                                    <div class="play">
-                                        <span class="fa fa-play"></span>
-                                    </div>
-                                    <h4>Mega Hit Mix</h4>
-                                    <p>A mega mix of 75 favorites from the last...</p>
-                                </div>
-
-                                <div class="item">
-                                    <img src="https://i.scdn.co/image/ab67616d0000b2733b5e11ca1b063583df9492db" />
-                                    <div class="play">
-                                        <span class="fa fa-play"></span>
-                                    </div>
-                                    <h4>All out 80s</h4>
-                                    <p>The biggest songs of the 1090s.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <footer>
-
-            </footer>
-        </div>
     </main>
+    <<<<<<< HEAD=======<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous">
+        </script>
+        <script>
+            const toggler = document.querySelector(".btn");
+            toggler.addEventListener("click", function() {
+                document.querySelector("#sidebar").classList.toggle("collapsed");
+            });
+        </script>
+        >>>>>>> yassine
 </body>
