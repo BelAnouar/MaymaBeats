@@ -26,7 +26,9 @@ class Router
     $path = "/{$path}/";
     $path = preg_replace('#[/]{2,}#', '/', $path);
 
+
     $path = str_replace("/MaymaBeats/public/index.php/", "/", $path);
+
 
 
     return $path;
@@ -37,7 +39,9 @@ class Router
     $path = $this->normalizePath($path);
     $method = strtoupper($_POST['_METHOD'] ?? $method);
 
+
     foreach ($this->routes as $route) {
+
       if (
         !preg_match("#^{$route['regexPath']}$#", $path, $paramValues) ||
 

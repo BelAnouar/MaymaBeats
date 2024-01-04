@@ -26,6 +26,7 @@ use App\Controllers\profilecontroller;
 use App\Controllers\Reactioncontroller;
 use App\Controllers\StylesController;
 use App\Controllers\TestController;
+use app\Services\Reactionmodel;
 
 function registerRoutes(App $app)
 {
@@ -66,8 +67,12 @@ function registerRoutes(App $app)
     $app->get("/test", [TestController::class, "index"]);
     $app->get('/test/{anouar}', [TestController::class, "aff"]);
     $app->post("/test", [TestController::class, "post"]);
-    $app->post("/client", [Reactioncontroller::class, "addlike"]);
-    $app->post("/client", [Reactioncontroller::class, "adddislike"]);
+    $app->post("/client", [Reactionmodel::class, "addlike"]);
+    $app->post("/client", [Reactionmodel::class, "adddislike"]);
     $app->get("/client", [parolecontroller::class, "addlyrics"]);
     $app->post("/client", [parolecontroller::class, "deletelyrics"]);
+
+    $app->get('/signup', [AuthController::class, 'index']);
+    $app->get('/login', [LoginController::class, 'index']);
+    $app->post('/signup', [AuthController::class, 'register']);
 }
