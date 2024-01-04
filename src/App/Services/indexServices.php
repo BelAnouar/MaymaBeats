@@ -17,11 +17,13 @@ class indexServices
     {
     }
 
-    public  function afficheSong()
+    public function afficheSong()
     {
         $sql = "SELECT * FROM `song`";
         $rest = $this->db->query($sql)->findAll();
 
         return $rest;
     }
+
+
 }
