@@ -16,6 +16,6 @@ class IndexController
     public function index()
     {
         $songs = $this->index->afficheSong();
-        echo $this->view->render("/index.php", ["songs" => $songs]);
+        echo $this->view->render("/index.php", ["songs" => 'fj']);
     }
 }

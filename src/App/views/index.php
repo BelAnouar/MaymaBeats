@@ -1,11 +1,3 @@
-<?php
-
-
-var_dump($songs);
-
-
-?>
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -15,7 +7,7 @@ var_dump($songs);
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/ae360af17e.js" crossorigin="anonymous"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
-    <link rel="stylesheet" href="../../../public/assets/css/style.css">
+    <link rel="stylesheet" href="/Maymabeats/public/assets/css/style.css">
     <title>Accueil</title>
 </head>
 
@@ -49,7 +41,7 @@ var_dump($songs);
                             Mood
                         </a>
                     </li>
-                    
+
                     <li class="sidebar-item">
                         <a href="#playlist" class="sidebar-link">
                             <i class="fa-regular fa-user p-2 "></i>
@@ -86,7 +78,7 @@ var_dump($songs);
                             <div id="plan"></div>
                             <div class="px-6 py-8">
                                 <div class="max-w-4xl mx-auto" id="home">
-                                    <div class="bg-dark rounded-3xl p-8 mb-5" id="border">
+                                    <div class="bg-white rounded-3xl p-8 mb-5" id="border">
                                         <div class="d-flex justify-content-between">
                                             <div>
                                                 <h1 class="mx-5 text-white mt-3 fw-bold">Paroly Playlist</h1>
@@ -101,15 +93,14 @@ var_dump($songs);
                                                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: rgba(255, 255, 255, 1);position: absolute;">
                                                                 <path d="M12 4.595a5.904 5.904 0 0 0-3.996-1.558 5.942 5.942 0 0 0-4.213 1.758c-2.353 2.363-2.352 6.059.002 8.412l7.332 7.332c.17.299.498.492.875.492a.99.99 0 0 0 .792-.409l7.415-7.415c2.354-2.354 2.354-6.049-.002-8.416a5.938 5.938 0 0 0-4.209-1.754A5.906 5.906 0 0 0 12 4.595zm6.791 1.61c1.563 1.571 1.564 4.025.002 5.588L12 18.586l-6.793-6.793c-1.562-1.563-1.561-4.017-.002-5.584.76-.756 1.754-1.172 2.799-1.172s2.035.416 2.789 1.17l.5.5a.999.999 0 0 0 1.414 0l.5-.5c1.512-1.509 4.074-1.505 5.584-.002z"></path>
                                                             </svg>
-                                                             <?= $s[''] ?><!--<img src="https://i.scdn.co/image/ab67616d0000b2733b5e11ca1b063583df9492db" /> -->
+                                                            <?= $s['imageS']; ?><!--<img src="https://i.scdn.co/image/ab67616d0000b2733b5e11ca1b063583df9492db" /> -->
                                                             <a href="albumMusic.html">
                                                                 <div class="play">
                                                                     <span class="fa fa-play text-dark"></span>
                                                                 </div>
                                                             </a>
-                                                            <h4><?php //$song->afficheSong(); 
-                                                                ?></h4>
-                                                            <p>Kick back to the best new and recent chill...</p>
+                                                            <h4><? echo $s['nomS']; ?></h4>
+                                                            <p><?= $s['dateC']; ?></p>
                                                             <div class="flex">
                                                                 <a href="parole.php">
                                                                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: rgba(255, 255, 255, 1);">
@@ -276,17 +267,17 @@ var_dump($songs);
                     </div>
                 </div>
             </main>
-        <footer>
+            <footer>
 
-        </footer>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
-        <script>
-            const toggler = document.querySelector(".btn");
-            toggler.addEventListener("click", function() {
-                document.querySelector("#sidebar").classList.toggle("collapsed");
-            });
-        </script>
-    </div>
+            </footer>
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+            <script>
+                const toggler = document.querySelector(".btn");
+                toggler.addEventListener("click", function() {
+                    document.querySelector("#sidebar").classList.toggle("collapsed");
+                });
+            </script>
+        </div>
 </body>
 
 </html>

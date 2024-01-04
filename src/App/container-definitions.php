@@ -29,10 +29,11 @@ return [
         $db = $container->get(Database::class);
 
         return new TestService($db);
-    }, indexServices::class => function (Container $container) {
+    },
+    indexServices::class => function (Container $container) {
         $db = $container->get(Database::class);
-
         return new indexServices($db);
     }
+
 
 ];
