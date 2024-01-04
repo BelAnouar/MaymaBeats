@@ -12,6 +12,14 @@ class parole {
             
     }
 
+
+    public function getlyrics($parole){
+      $stmt = $this->db->query(
+            "SELECT *FROM parole "
+        )->findAll();
+        return $stmt;
+    }
+
     public function addlyrics($parole) {
         $this->db->query(
           "INSERT INTO parole (parole) VALUES (:parole)",

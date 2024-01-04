@@ -3,6 +3,7 @@
 declare(strict_types=1);
 
 use App\Config\Paths;
+use app\Services\parole;
 use app\Services\Reactionmodel;
 use App\Services\TestService;
 use App\Services\ValidatorService;
@@ -34,6 +35,11 @@ return [
         $db = $container->get(Database::class);
 
         return new Reactionmodel($db);
+    },
+    parole::class => function (Container $container) {
+        $db = $container->get(Database::class);
+
+        return new parole($db);
     }
 
 ];

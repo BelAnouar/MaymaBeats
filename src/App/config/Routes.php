@@ -47,8 +47,16 @@ function registerRoutes(App $app)
     $app->get("/test", [TestController::class, "index"]);
     $app->get('/test/{anouar}', [TestController::class, "aff"]);
     $app->post("/test", [TestController::class, "post"]);
+
+
+
+    //routes pour les likes
     $app->post("/client", [Reactioncontroller::class, "addlike"]);
     $app->post("/client", [Reactioncontroller::class, "adddislike"]);
+
+
+
+    //routes pour ajouter et supprimer paroles
     $app->get("/client", [parolecontroller::class, "addlyrics"]);
     $app->post("/client", [parolecontroller::class, "deletelyrics"]);
 

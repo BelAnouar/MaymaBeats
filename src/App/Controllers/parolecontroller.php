@@ -8,17 +8,23 @@ use app\Services\parole;
 use Framework\TemplateEngine;
 
 class parolecontroller{
-    public function __construct(private TemplateEngine $view,private parole $idP ){
+    public function __construct(private TemplateEngine $view,private parole $parole ){
 
     }
 
+    public function getlyrics($parole){  
+        $this->parole->getlyrics($parole);
+     
+        }
+
+
     public function addlyrics($parole){
-      $this->addlyrics($parole);
+      $this->parole->addlyrics($parole);
    
       }
 
 
       public function deletelyrics($idP){
-        $this->addlyrics($idP);
+        $this->parole->deletelyrics($idP);
         }
 }
