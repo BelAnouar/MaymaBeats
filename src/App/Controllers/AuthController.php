@@ -11,16 +11,12 @@ use Framework\TemplateEngine;
 class AuthController
 {
 
-    public function __construct(private TemplateEngine $view, private ValidatorService $validate)
+    public function __construct(private TemplateEngine $view)
     {
     }
 
     public function  index()
     {
-        echo $this->view->render("/register.php");
-    }
-    public function  register()
-    {
-        $this->validate->validateRegister($_POST);
+        echo $this->view->render("/signup.php");
     }
 }

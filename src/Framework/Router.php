@@ -25,7 +25,7 @@ class Router
     $path = trim($path, '/');
     $path = "/{$path}/";
     $path = preg_replace('#[/]{2,}#', '/', $path);
-    $path = str_replace("/public/index.php/", "/", $path);
+    $path = str_replace("/brief%2010/MaymaBeats/public/index.php/", "/", $path);
 
     return $path;
   }
@@ -35,7 +35,9 @@ class Router
     $path = $this->normalizePath($path);
     $method = strtoupper($method);
 
+
     foreach ($this->routes as $route) {
+
       if (
 
         !preg_match("#^{$route['path']}$#", $path) ||
