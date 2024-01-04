@@ -20,9 +20,9 @@ class artisteModal {
     }
 
     public function afficherAlbum(){
-            $sql = "select * from album ";
-            $sql = $this->db->query($sql);
-            $sql = $sql->findAll();
+            
+            $sql = $this->db->query("SELECT * FROM `album`")->findAll();
+        
             return $sql;
      }
 
@@ -36,7 +36,6 @@ class artisteModal {
             ':title'=> $title,
             ':description'=> $description
         ]);
-        return $this->afficherAlbum();
         }
     
     

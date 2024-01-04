@@ -7,14 +7,18 @@ declare(strict_types=1);
 namespace App\Config;
 
 
+
 use App\Controllers\ArtisteConrtoller;
 use Framework\App;
 use App\Controllers\ArtistsConrtoller;
 use App\Controllers\YassineController;
+
 use App\Controllers\AdminAr;
 use App\Controllers\AdminCl;
 use App\Controllers\AdminController;
 use App\Controllers\AdminNot;
+
+
 
 use App\Controllers\HomeController;
 
@@ -30,17 +34,20 @@ function registerRoutes(App $app)
 
     $app->get('/', [HomeController::class, 'home']);
     $app->get('/login', [LoginController::class, 'index']);
+
     $app->get('/signup', [AuthController::class, 'index']);
     $app->post('/signup', [AuthController::class, 'post']);
     $app->get('/yassine', [YassineController::class, 'index']);
     $app->get('/salah', [SalahController::class, 'index']);
     $app->get('/profile', [profilecontroller::class, 'index']);
+
     $app->get('/register', [AuthController::class, 'index']);
     $app->post('/register', [AuthController::class, 'register']);
     $app->get('/admin', [AdminController::class, 'index']);
     $app->get('/admin-c', [AdminCl::class, 'index']);
     $app->get('/admin-a', [AdminAr::class, 'index']);
     $app->get('/adminNot', [AdminNot::class, 'index']);
+
     $app->get('/admin-s', [StylesController::class, 'index']);
     $app->get('/admin-s/{transaction}', [StylesController::class, 'view']);
     $app->get("/test", [TestController::class, "index"]);
@@ -49,5 +56,11 @@ function registerRoutes(App $app)
 
     $app->post('/artiste', [ArtisteConrtoller::class,"addAlbum"]);
     $app->get('/artiste', [ArtisteConrtoller::class,"index"]);
+
+
+    $app->get('/signup', [AuthController::class, 'index']);
+    $app->post('/signup', [AuthController::class, 'post']);
+    $app->get('/yassine', [YassineController::class, 'index']);
+    $app->get('/salah', [SalahController::class, 'index']);
 
 }

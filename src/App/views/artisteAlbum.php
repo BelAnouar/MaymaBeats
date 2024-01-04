@@ -137,14 +137,18 @@
                                         <div class="grid grid gap-x-20">
                                             <div class="spotify-playlists">
                                                 <div class="list">
+                                                    <?php 
+                                                    foreach($albums as $album){
+                                                    ?>
                                                     <div class="item w-25">
-                                                        <img src="https://i.scdn.co/image/ab67616d0000b2733b5e11ca1b063583df9492db" />
+                                                    <img src="<?= $album['imageAb'] ?>" alt="image" >
                                                         <a href="">
                                                             <div class="play">
                                                             <span class="fa fa-play text-dark"></span></a>
                                                         </div>
-                                                        <h4>akil</h4>
-                                                        <p>The biggest songs of the 1090s.</p>
+                                                        <h4><?=$album["title"]?></h4>
+                                                        <p><?=$album["description"]?></p>
+                                                        <?php }?>
                                                     </div>
                                                 </div>
                                             </div>

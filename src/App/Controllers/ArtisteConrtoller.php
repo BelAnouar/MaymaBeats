@@ -16,8 +16,9 @@ class ArtisteConrtoller{
 
     }
     public function index(){
-         
-        echo $this->view->render("/artisteAlbum.php");
+        $rest = $this->artist->afficherAlbum();
+ 
+        echo $this->view->render("/artisteAlbum.php", ["albums" => $rest]);
     }
     public function addAlbum(){
    
@@ -28,11 +29,11 @@ class ArtisteConrtoller{
     $destination = "$target_dir$ext";
     $destinationImg="/maymabeats/public/assets/images/".$ext;
     move_uploaded_file($orig_file, $destination); 
-    
+        
     $title=$_POST["title"];
     $dateC=$_POST["date"];
     $description=$_POST["description"];
-
+    
         $this->artist->addAlbum($destinationImg,$dateC,1,$title,$description);
     }
 
