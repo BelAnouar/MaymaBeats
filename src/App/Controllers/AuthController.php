@@ -18,14 +18,5 @@ class AuthController
     public function  index()
     {
         echo $this->view->render("/signup.php");
-<<<<<<< HEAD
-    }
-
-    public function post()
-    {
-
-        $this->validate->create($_POST);
-=======
->>>>>>> oussama
     }
 }
