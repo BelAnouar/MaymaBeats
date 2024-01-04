@@ -5,6 +5,7 @@ declare(strict_types=1);
 use App\Config\Paths;
 use App\Controllers\ArtisteConrtoller;
 use App\Services\artisteModal;
+use App\Services\artisteMusic;
 use App\Services\StylesService;
 use App\Services\TestService;
 
@@ -34,12 +35,20 @@ return [
     },
 
     
-    
+    // ARTISTE -------------------------------------------------
     artisteModal::class => function (Container $container) {    
         $db = $container->get(Database::class);
         return new artisteModal($db);
-    }
+    },
 
+    artisteMusic::class => function(Container $container){
+        $db = $container->get(Database::class);
+        return new artisteMusic($db);
+    }
     
+    // -----------------------------------------------------------------
+
+
+
 
 ];

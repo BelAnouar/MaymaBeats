@@ -8,9 +8,9 @@ namespace App\Config;
 
 
 
+use App\Controllers\musicArtiste;
 use App\Controllers\ArtisteConrtoller;
 use Framework\App;
-use App\Controllers\ArtistsConrtoller;
 use App\Controllers\YassineController;
 
 use App\Controllers\AdminAr;
@@ -24,6 +24,7 @@ use App\Controllers\HomeController;
 
 use App\Controllers\AuthController;
 use App\Controllers\LoginController;
+use App\Controllers\MusicControllers;
 use App\Controllers\SalahController;
 use App\Controllers\profilecontroller;
 use App\Controllers\StylesController;
@@ -54,8 +55,15 @@ function registerRoutes(App $app)
     $app->get('/test/{anouar}', [TestController::class, "aff"]);
     $app->post("/test", [TestController::class, "post"]);
 
+    // ARTISTE ----------------------------------------------------------------------------
+
     $app->post('/artiste', [ArtisteConrtoller::class,"addAlbum"]);
     $app->get('/artiste', [ArtisteConrtoller::class,"index"]);
+    $app->post('/musicArtiste/{idm}',[MusicControllers::class ,"addMusic" ]);
+    $app->get('/musicArtiste/{idm}',[MusicControllers::class ,"afficherMusic" ]);
+    
+
+    // ---------------------------------------------------------------------------------------
 
 
     $app->get('/signup', [AuthController::class, 'index']);
