@@ -9,8 +9,13 @@
 body {
     font-family: 'Poppins', sans-serif;
     margin: 0;
+<<<<<<< HEAD
     background-image: url("../music-vinyl-simple-background-minimalism-wallpaper-525162d0bd86de8bba1872a5c05859c2.jpg");
     
+=======
+    /* background-image: url("../img/bg.jpg"); */
+    background-color: #000;
+>>>>>>> 27bdfab889b5ae64bb9a88d744e504cab1adcd9f
     background-repeat: no-repeat;
     background-position: center bottom;
     background-size: cover;
@@ -39,6 +44,19 @@ li {
     width: 100%;
 }
 
+<<<<<<< HEAD
+=======
+.h-100 {
+    position: fixed;
+    width: 20%;
+}
+
+#border {
+    border: 3px solid #3f0a5f;
+    border-radius: 10px;
+}
+
+>>>>>>> 27bdfab889b5ae64bb9a88d744e504cab1adcd9f
 #sidebar {
     background-color: #201924;
     max-width: 264px;
@@ -90,9 +108,16 @@ a.sidebar-link {
     display: block;
     font-size: 1rem;
 }
+<<<<<<< HEAD
 .sidebar-link{
     
     border-bottom:1px solid beige ;
+=======
+
+.sidebar-link {
+
+    border-bottom: 1px solid beige;
+>>>>>>> 27bdfab889b5ae64bb9a88d744e504cab1adcd9f
 }
 
 .sidebar-link[data-bs-toggle="collapse"]::after {
@@ -133,7 +158,11 @@ a.sidebar-link {
     background: rgba(0, 0, 0, .3);
 }
 
+<<<<<<< HEAD
 body main{
+=======
+body main {
+>>>>>>> 27bdfab889b5ae64bb9a88d744e504cab1adcd9f
     overflow-y: scroll;
     scroll-behavior: smooth;
 }
@@ -153,20 +182,21 @@ body main{
     width: 100%;
     gap: 20px;
     flex-wrap: wrap;
+    justify-content: center;
 }
 
 .spotify-playlists .list .item {
     min-width: 140px;
-    width: 160px;
+    width: 23%;
     padding: 15px;
-    background-color: #1f2937;
+    background-color: #390a4d;
     border-radius: 6px;
     cursor: pointer;
     transition: all ease 0.4s;
 }
 
 .spotify-playlists .list .item:hover {
-    background-color: #252525;
+    background-color: #777777;
 }
 
 .spotify-playlists .list .item img {
@@ -248,10 +278,15 @@ body main{
     font-size: 15px;
     transition: ease-in-out .2s;
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 27bdfab889b5ae64bb9a88d744e504cab1adcd9f
 .add {
     background-color: #320f48;
     color: #FFF;
     border-radius: 10%;
+<<<<<<< HEAD
 }
 .add:hover{
     background-color: #201924;
@@ -263,6 +298,21 @@ body main{
 
 /* Responsive */
 
+=======
+}
+
+.add:hover {
+    background-color: #201924;
+    color: #ffffff;
+}
+
+.album-img img {
+    border-radius: 50%;
+}
+
+/* Responsive */
+
+>>>>>>> 27bdfab889b5ae64bb9a88d744e504cab1adcd9f
 @media (min-width:768px) {
     .content {
         width: auto;

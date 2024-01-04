@@ -27,6 +27,7 @@ use App\Controllers\Reactioncontroller;
 use App\Controllers\StylesController;
 use App\Controllers\TestController;
 use app\Services\Reactionmodel;
+use App\Controllers\IndexController;
 
 function registerRoutes(App $app)
 {
@@ -61,6 +62,8 @@ function registerRoutes(App $app)
 
     $app->post('/artiste', [ArtisteConrtoller::class, "addAlbum"]);
     $app->get('/artiste', [ArtisteConrtoller::class, "index"]);
+    // yassine Route for index page (client)
+    $app->get('/index', [IndexController::class, 'index']);
 
 
 
