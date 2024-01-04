@@ -11,7 +11,7 @@ use Framework\TemplateEngine;
 class AuthController
 {
 
-    public function __construct(private TemplateEngine $view, private ValidatorService $validate)
+    public function __construct(private TemplateEngine $view)
     {
     }
 
@@ -20,9 +20,5 @@ class AuthController
         echo $this->view->render("/signup.php");
     }
 
-    public function post()
-    {
-
-        $this->validate->create($_POST);
-    }
+    
 }

@@ -9,6 +9,7 @@
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
+
 <body class="bg-black relative overflow-hidden max-h-screen">
     <header class="bg-black fixed right-0 top-0 left-60 py-3 px-4 h-16 border-b-2 border-[#BC6FF1]" style="z-index: 999;">
         <div class="max-w-4xl mx-auto">
@@ -456,13 +457,13 @@
                     </footer>
                 </div>
     </main>
-    <<<<<<< HEAD=======<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous">
-        </script>
-        <script>
-            const toggler = document.querySelector(".btn");
-            toggler.addEventListener("click", function() {
-                document.querySelector("#sidebar").classList.toggle("collapsed");
-            });
-        </script>
-        >>>>>>> yassine
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous">
+    </script>
+    <script>
+        const toggler = document.querySelector(".btn");
+        toggler.addEventListener("click", function() {
+            document.querySelector("#sidebar").classList.toggle("collapsed");
+        });
+    </script>
+
 </body>

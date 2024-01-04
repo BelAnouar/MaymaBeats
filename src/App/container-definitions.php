@@ -3,6 +3,9 @@
 declare(strict_types=1);
 
 use App\Config\Paths;
+use App\Services\artisteModal;
+
+use App\Services\Parole;
 use app\Services\Reactionmodel;
 use App\Services\TestService;
 
@@ -20,21 +23,26 @@ return [
         'dbname' => $_ENV['DB_NAME']
     ], $_ENV['DB_USER'], $_ENV["DB_PASS"]),
 
-    StylesService::class => function (Container $container) {
-        $db = $container->get(Database::class);
 
-        return new StylesService($db);
-    },
     TestService::class => function (Container $container) {
         $db = $container->get(Database::class);
 
         return new TestService($db);
     },
-    artisteModal::class => function (Container $container) {
+    Reactionmodel::class => function (Container $container) {
         $db = $container->get(Database::class);
 
         return new Reactionmodel($db);
-    }
+    },
+    Parole::class => function (Container $container) {
+        $db = $container->get(Database::class);
 
+        return new Parole($db);
+    },
+    artisteModal::class => function (Container $container) {
+        $db = $container->get(Database::class);
+
+        return new artisteModal($db);
+    }
 
 ];

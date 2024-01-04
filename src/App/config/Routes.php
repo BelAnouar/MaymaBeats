@@ -35,7 +35,7 @@ function registerRoutes(App $app)
     $app->get('/signup', [AuthController::class, 'index']);
     $app->post('/signup', [AuthController::class, 'post']);
     $app->get('/yassine', [YassineController::class, 'index']);
-    $app->get('/salah', [SalahController::class, 'index']);
+
     $app->get('/profile', [profilecontroller::class, 'index']);
     $app->get('/register', [AuthController::class, 'index']);
     $app->post('/register', [AuthController::class, 'register']);
@@ -76,6 +76,7 @@ function registerRoutes(App $app)
 
 
     //routes pour ajouter et supprimer paroles
-    $app->get("/client", [parolecontroller::class, "addlyrics"]);
-    $app->post("/client", [parolecontroller::class, "deletelyrics"]);
+    $app->get("/prole", [parolecontroller::class, "getlyrics"]);
+    // $app->get("/salah", [parolecontroller::class, "addlyrics"]);
+    $app->post("/prole", [parolecontroller::class, "deletelyrics"]);
 }

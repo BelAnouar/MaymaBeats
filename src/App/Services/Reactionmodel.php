@@ -12,12 +12,11 @@ class Reactionmodel {
         {
                 
         }
-        public function addlike($like,$dislike,$client_id,$song_id) {
+        public function addlike($client_id,$song_id) {
                 $this->db->query(
-                  "INSERT INTO reaction (like,dislike,client_id,song_id) VALUES (:like, :dislike, :client_id,song_id)",
+                  "INSERT INTO reaction (like,dislike,client_id,song_id) VALUES (1,0 :client_id,song_id)",
                   [
-                       ' like'=>$like,
-                       ' dislike'=>$dislike,
+                      
                        ' client_id'=>$client_id,
                        ' song_id'=>$song_id,
                       
@@ -26,12 +25,11 @@ class Reactionmodel {
                   );
                
 }
-public function adddislike($like,$dislike,$client_id,$song_id) {
+        public function adddislike($client_id,$song_id) {
         $this->db->query(
-          "INSERT INTO reaction (like,dislike,client_id,song_id) VALUES (:like, :dislike, :client_id,song_id)",
+          "INSERT INTO reaction (like,dislike,client_id,song_id) VALUES (0,1, :client_id,song_id)",
           [
-               ' like'=>$like,
-               ' dislike'=>$dislike,
+              
                ' client_id'=>$client_id,
                ' song_id'=>$song_id,
               
@@ -40,12 +38,6 @@ public function adddislike($like,$dislike,$client_id,$song_id) {
           );
        
 }
-
-
-
-
-
-
 
 }
 
