@@ -1,3 +1,11 @@
+<?php
+
+
+var_dump($songs);
+
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -41,6 +49,13 @@
                             Mood
                         </a>
                     </li>
+                    
+                    <li class="sidebar-item">
+                        <a href="#playlist" class="sidebar-link">
+                            <i class="fa-regular fa-user p-2 "></i>
+                            My playlist
+                        </a>
+                    </li>
                     <li class="sidebar-item">
                         <a href="#" class="sidebar-link">
                             <i class="fa-solid fa-right-from-bracket p-2 "></i>
@@ -81,18 +96,19 @@
                                         <div class="grid grid gap-x-20">
                                             <div class="spotify-playlists">
                                                 <div class="list">
-                                                    <?php for ($x = 0; $x < 8; $x++) { ?>
+                                                    <?php foreach ($songs as $s) { ?>
                                                         <div class="item">
                                                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: rgba(255, 255, 255, 1);position: absolute;">
                                                                 <path d="M12 4.595a5.904 5.904 0 0 0-3.996-1.558 5.942 5.942 0 0 0-4.213 1.758c-2.353 2.363-2.352 6.059.002 8.412l7.332 7.332c.17.299.498.492.875.492a.99.99 0 0 0 .792-.409l7.415-7.415c2.354-2.354 2.354-6.049-.002-8.416a5.938 5.938 0 0 0-4.209-1.754A5.906 5.906 0 0 0 12 4.595zm6.791 1.61c1.563 1.571 1.564 4.025.002 5.588L12 18.586l-6.793-6.793c-1.562-1.563-1.561-4.017-.002-5.584.76-.756 1.754-1.172 2.799-1.172s2.035.416 2.789 1.17l.5.5a.999.999 0 0 0 1.414 0l.5-.5c1.512-1.509 4.074-1.505 5.584-.002z"></path>
                                                             </svg>
-                                                            <img src="https://i.scdn.co/image/ab67616d0000b2733b5e11ca1b063583df9492db" />
+                                                             <?= $s[''] ?><!--<img src="https://i.scdn.co/image/ab67616d0000b2733b5e11ca1b063583df9492db" /> -->
                                                             <a href="albumMusic.html">
                                                                 <div class="play">
                                                                     <span class="fa fa-play text-dark"></span>
                                                                 </div>
                                                             </a>
-                                                            <h4>Chill Hits</h4>
+                                                            <h4><?php //$song->afficheSong(); 
+                                                                ?></h4>
                                                             <p>Kick back to the best new and recent chill...</p>
                                                             <div class="flex">
                                                                 <a href="parole.php">
@@ -211,7 +227,7 @@
                             </div>
                         </div>
                         <div class="ml-60 pt-16 max-h-screen overflow-auto">
-                            <div id="plan"></div>
+                            <div id="playlist"></div>
                             <div class="px-6 py-8">
                                 <div class="max-w-4xl mx-auto">
                                     <div class="bg-dark rounded-3xl p-8 mb-5" id="border">
@@ -254,8 +270,12 @@
                                             </div>
                                         </div>
                                     </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </main>
-        </div>
         <footer>
 
         </footer>

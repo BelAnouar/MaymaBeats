@@ -22,6 +22,7 @@ use App\Controllers\SalahController;
 use App\Controllers\profilecontroller;
 use App\Controllers\StylesController;
 use App\Controllers\TestController;
+use App\Controllers\IndexController;
 
 function registerRoutes(App $app)
 {
@@ -43,6 +44,8 @@ function registerRoutes(App $app)
     $app->get('/admin-s', [StylesController::class, 'index']);
     $app->get('/admin-s/{transaction}', [StylesController::class, 'view']);
 
+    // yassine Route for index page (client)
+    $app->get('/index', [IndexController::class, 'index']);
 
 
 

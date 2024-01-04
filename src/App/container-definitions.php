@@ -3,6 +3,7 @@
 declare(strict_types=1);
 
 use App\Config\Paths;
+use App\Services\indexServices;
 use App\Services\TestService;
 use App\Services\ValidatorService;
 use Framework\Container;
@@ -28,6 +29,10 @@ return [
         $db = $container->get(Database::class);
 
         return new TestService($db);
+    }, indexServices::class => function (Container $container) {
+        $db = $container->get(Database::class);
+
+        return new indexServices($db);
     }
 
 ];
