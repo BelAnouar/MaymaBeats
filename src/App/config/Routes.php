@@ -70,8 +70,8 @@ function registerRoutes(App $app)
 
 
     //routes pour les likes
-    $app->post("/client", [Reactioncontroller::class, "addlike"]);
-    $app->post("/client", [Reactioncontroller::class, "adddislike"]);
+    $app->post("/like", [Reactioncontroller::class, "addlike"]);
+    $app->post("/dislike", [Reactioncontroller::class, "adddislike"]);
 
 
 

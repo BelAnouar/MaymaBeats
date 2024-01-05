@@ -6,7 +6,7 @@ use App\Config\Paths;
 use App\Services\artisteModal;
 
 use App\Services\Parole;
-use app\Services\Reactionmodel;
+use App\Services\Reactionmodel;
 use App\Services\TestService;
 
 use Framework\Container;
