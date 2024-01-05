@@ -1,5 +1,6 @@
 <?php
 
+
 declare(strict_types=1);
 
 
@@ -15,8 +16,12 @@ use PHPMailer\PHPMailer\SMTP;
 
 
 
+
+
+
 class ValidatorService
 {
+
 
     private PHPMailer $mail;
     public function __construct(private Database $db)

@@ -80,7 +80,7 @@
                                     <div class="backdrop-blur-3xl rounded-3xl border-[#BC6FF1] border-2 p-8 mb-5">
                                         <div class="d-flex justify-content-between">
                                             <div>
-                                                <h1 class="mx-5 text-dark mt-3 fw-bold">CLIENTS</h1>
+                                                <h1 class="mx-5 text-dark mt-3 fw-bold">ARTISTS</h1>
                                             </div>
 
                                             <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-eAq1o24KdHuwmHg9F5n3pX56K1Fmksz/5m6ZsETQPKFfFlvHkUm6q1ahFnh2LJZ6" crossorigin="anonymous"></script>
@@ -88,7 +88,7 @@
 
 
                                         <hr class="my-10">
-                                        <div class="container h-100">
+                                        <div class="container h-100 mb-5">
                                             <div class="row align-middle">
                                                 <div class="col-md-6 col-lg-4 column">
                                                     <div class="card gr-1">
@@ -96,13 +96,13 @@
                                                             <h1>ANOUAR</br>
                                                             </h1>
                                                             <p>J-POP</p>
+                                                          
+                                                                <p>220 SONGS <br>7 ALBUMS</p>
 
+                                                           
                                                         </div>
-                                                        <div class="d-flex aff"> <a href="#">
-                                                                <p>220 SONGS</p>
-                                                            </a>
-                                                            <p>7 ALBUMS</p>
-                                                        </div>
+
+
 
                                                         <div class="ico-card">
                                                             <!-- <i class="fa fa-rebel"> </i> -->
@@ -117,8 +117,13 @@
                                                             <h1>SALAH</br>
                                                             </h1>
                                                             <p>HIP HOP</p>
+                                                          
+                                                          
+                                                          <p>220 SONGS <br>7 ALBUMS</p>
+
+                                                     
                                                         </div>
-                                                        <a href="#">more</a>
+                                                       
                                                         <div class="ico-card">
                                                             <!-- <i class="fa fa-codepen"></i> -->
                                                         </div>
@@ -129,8 +134,13 @@
                                                         <div class="txt">
                                                             <h1>YASSINE</br></h1>
                                                             <p>L AMDA7</p>
+                                                          
+                                                          
+                                                          <p>220 SONGS <br>7 ALBUMS</p>
+
+                                                     
                                                         </div>
-                                                        <a href="#">more</a>
+                                                       
                                                         <div class="ico-card">
 
                                                         </div>

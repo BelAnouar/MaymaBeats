@@ -20,6 +20,7 @@ class AuthController
         echo $this->view->render("/signup.php");
     }
 
+
     public function registerUser()
     {
         if ($_POST["Role"] === "artist") {

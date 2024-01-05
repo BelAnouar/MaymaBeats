@@ -29,6 +29,12 @@
                         </a>
                     </li>
                     <li class="sidebar-item">
+                        <a href="" class="sidebar-link">
+                            <i class="fa-regular fa-user p-2 "></i>
+                            Profile
+                        </a>
+                    </li>
+                    <li class="sidebar-item">
                         <a href="#" class="sidebar-link">
                             <i class="fa-solid fa-right-from-bracket p-2 "></i>
                             Logout
@@ -86,13 +92,16 @@
                                                 <h1 class="modal-title fs-5" id="exampleModalLabel">Ajoutez les paroles de cette music ici</h1>
                                                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                                             </div>
-                                            <div class="modal-body">
-                                                <textarea name="parole" id="" cols="55" rows="10" style="resize: none;"></textarea>
-                                            </div>
-                                            <div class="modal-footer">
-                                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                                                <button type="button" class="btn btn-primary">Save changes</button>
-                                            </div>
+                                            <form method="post">
+
+                                                <div class="modal-body">
+                                                    <textarea name="parole" id="" cols="55" rows="10" style="resize: none;"></textarea>
+                                                </div>
+                                                <div class="modal-footer">
+                                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                                    <button type="submit" class="btn btn-primary">Save changes</button>
+                                                </div>
+                                            </form>
                                         </div>
                                     </div>
                                 </div>
@@ -157,15 +166,83 @@
             </main>
             <footer>
             </footer>
-            <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
-            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
-            <script>
-                const toggler = document.querySelector(".btn");
-                toggler.addEventListener("click", function() {
-                    document.querySelector("#sidebar").classList.toggle("collapsed");
-                });
-            </script>
         </div>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
+        <script>
+            const toggler = document.querySelector(".btn");
+            toggler.addEventListener("click", function() {
+                document.querySelector("#sidebar").classList.toggle("collapsed");
+            });
+        </script>
+        <!-- ////////script de ajax de like ////////////  -->
+        <script>
+            const like = document.querySelector("#like");
+            const dlike = document.querySelector("#dlike");
+
+            like.addEventListener("click", function(e) {
+                e.preventDefault();
+                const userData = {
+
+                    id_client: 1,
+                    id_song: 2,
+
+                };
+
+
+                fetch('/MaymaBeats/public/index.php/like', {
+                        method: 'POST',
+                        headers: {
+                            'Content-Type': 'application/json',
+                        },
+                        body: JSON.stringify(userData)
+                    })
+                    .then(response => {
+                        if (response.ok) {
+                            return response.text();
+                        }
+                        throw new Error('Network response was not ok.');
+                    })
+                    .then(data => {
+                        console.log('like successful:', data);
+                    })
+                    .catch(error => {
+                        console.error('Error during signup:', error);
+                    });
+            });
+
+            dlike.addEventListener("click", function(e) {
+                e.preventDefault();
+                const userData = {
+
+                    id_client: 1,
+                    id_song: 2,
+
+                };
+                fetch('/MaymaBeats/public/index.php/dislike', {
+                        method: 'POST',
+                        headers: {
+                            'Content-Type': 'application/json',
+                        },
+                        body: JSON.stringify(userData)
+                    })
+                    .then(response => {
+                        if (response.ok) {
+                            return response.text();
+                        }
+                        throw new Error('Network response was not ok.');
+                    })
+                    .then(data => {
+                        console.log('dislike successful:', data);
+                    })
+                    .catch(error => {
+                        console.error('Error during signup:', error);
+                    });
+            });
+        </script>
+</body>
+
+</html>
 </body>
 
 </html>

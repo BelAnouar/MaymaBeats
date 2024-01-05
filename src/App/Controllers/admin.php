@@ -133,7 +133,7 @@
                     <div class="table-responsive custom-table-responsive col-12 ssl mx-5">
                       <div class="tiles d-flex col-12">
 
-                        <article class="tile col-4">
+                        <article class="tile col-4" id="clients">
                           <div class="tile-header">
                             <i class="ph-lightning-light"></i>
                             <h3>
@@ -142,7 +142,7 @@
                             </h3>
                           </div>
                         </article>
-                        <article class="tile col-4 mx-5">
+                        <article class="tile col-4 mx-5" id="artist">
                           <div class="tile-header">
                             <i class="ph-fire-simple-light"></i>
                             <h3>
@@ -158,7 +158,7 @@
                     <div class="table-responsive custom-table-responsive col-12 ssl my-2 mx-5">
                       <div class="tiles d-flex col-12">
 
-                        <article class="tile col-4">
+                        <article class="tile col-4" id="playlist">
                           <div class="tile-header">
                             <i class="ph-lightning-light"></i>
                             <h3>
@@ -167,7 +167,7 @@
                             </h3>
                           </div>
                         </article>
-                        <article class="tile col-4 mx-5">
+                        <article class="tile col-4 mx-5" id="albums">
                           <div class="tile-header">
                             <i class="ph-fire-simple-light"></i>
                             <h3>

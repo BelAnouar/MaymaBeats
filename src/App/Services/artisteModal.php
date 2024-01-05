@@ -8,21 +8,15 @@ namespace App\Services;
 use Framework\Database;
 
 class artisteModal {
-    private $idArtiste ;
-    private $imageAlbum ;
-    private $title;
-    private $description;
-    private $dateC ;
-
 
     public function __construct( private Database $db ) {
 
     }
 
     public function afficherAlbum(){
-            $sql = "select * from album ";
-            $sql = $this->db->query($sql);
-            $sql = $sql->findAll();
+            
+            $sql = $this->db->query("SELECT * FROM `album`")->findAll();
+        
             return $sql;
      }
 
@@ -36,15 +30,20 @@ class artisteModal {
             ':title'=> $title,
             ':description'=> $description
         ]);
-        return $this->afficherAlbum();
+        
         }
-    
-    
+    public function getAlbumById($id)
+    {
+        $sql = "SELECT * FROM `album` WHERE `idAb` = :idAb ";
+        $result= $this->db->query($sql,[
+            ':idAb'=> $id,
+            
+        ])->find();
+        return $result;
+        
+        }
 
-
-
-
-
+  
 }
 
 

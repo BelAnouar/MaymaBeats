@@ -6,14 +6,15 @@ use App\Config\Paths;
 
 use App\Services\StylesService;
 use App\Services\artisteModal;
-
+use App\Services\artisteMusic;
 use App\Services\indexServices;
+
 use App\Services\TestService;
-use App\Services\ValidatorService;
+
 use Framework\Container;
 use Framework\Database;
 use Framework\TemplateEngine;
-
+use App\Services\ValidatorService;
 
 return [
     TemplateEngine::class => fn () => new TemplateEngine(Paths::VIEW),
@@ -23,6 +24,10 @@ return [
         'port' => $_ENV["DB_PORT"],
         'dbname' => $_ENV['DB_NAME']
     ], $_ENV['DB_USER'], $_ENV["DB_PASS"]),
+    ValidatorService::class => function (Container $container) {
+        $db = $container->get(Database::class);
+        return new ValidatorService($db);
+    },
 
     StylesService::class => function (Container $container) {
         $db = $container->get(Database::class);
@@ -48,7 +53,17 @@ return [
         $db = $container->get(Database::class);
 
         return new ValidatorService($db);
+    }, indexServices::class => function (Container $container) {
+        $db = $container->get(Database::class);
+
+        return new indexServices($db);
+    },
+
+    artisteMusic::class => function (Container $container) {
+        $db = $container->get(Database::class);
+        return new artisteMusic($db);
     }
+
 
 
 ];

@@ -557,6 +557,19 @@
             "time": "2023-11-12T22:43:29+00:00"
         }
     ],
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+    "content-hash": "2e21759f5a147c6caafbaf09c8ce5627",
+    "packages": [],
+>>>>>>> oussama
+=======
+>>>>>>> 27bdfab889b5ae64bb9a88d744e504cab1adcd9f
+>>>>>>> main
+>>>>>>> oumaima
     "packages-dev": [],
     "aliases": [],
     "minimum-stability": "stable",
