@@ -61,13 +61,16 @@ class ValidatorService
         $email = $formData["email"];
         $password = $formData["pass"];
         $query = "";
-
+        $role = "";
         if ($formData["Role"] === "artist") {
             $query = "SELECT * FROM artists WHERE email = :email";
+            $role = "idAr";
         } else if ($formData["Role"] === "client") {
             $query = "SELECT * FROM client WHERE email = :email";
+            $role = "idC";
         } else {
             $query = "SELECT * FROM admin WHERE email = :email";
+            $role = "idAd";
         }
 
         $user = $this->db->query($query, [
@@ -79,7 +82,7 @@ class ValidatorService
         }
 
         session_regenerate_id();
-        $_SESSION['user'] = $user['artists'];
+        $_SESSION['user'] = $user[$role];
     }
 
 
@@ -144,7 +147,7 @@ class ValidatorService
 
             $sql = "UPDATE `artists` SET  password = :pass WHERE idAr  = :userId";
         }
-        $params = [':pass' => $$hashedPassword, ':userId' => $iduser];
+        $params = [':pass' => $hashedPassword, ':userId' => $iduser];
 
         try {
             return $this->db->query($sql, $params)->find();

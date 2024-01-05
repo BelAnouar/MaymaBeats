@@ -29,5 +29,6 @@ class LoginController
         } else {
             $this->validate->login($_POST);
         }
+        header("Location: /MaymaBeats/public/index.php/");
     }
 }
