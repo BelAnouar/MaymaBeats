@@ -128,13 +128,14 @@ body {
     top: 120px;
     bottom: 0;
     right: 0;
-    left: 7em;
+    left: 9em;
     width: inherit;
     height: 40px;
     display: flex;
     .pens, .projects, .posts {
       position: relative;
-      left: -300px;
+      left: -180px;
+      
       width: calc(250px / 3);
       text-align: center;
       color: white;

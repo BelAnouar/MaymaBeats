@@ -28,7 +28,7 @@ class Container
 
 
         if (!$reflectionClass->isInstantiable()) {
-            throw new ContainerException("Class ${className} is not instantiable");
+            // throw new ContainerException("Class ${className} is not instantiable");
         }
         $constructor = $reflectionClass->getConstructor();
         if (!$constructor) {
@@ -46,7 +46,7 @@ class Container
             $type = $param->getType();
 
             if (!$type) {
-                throw new ContainerException("Failed to resolve class ${$className} because param ${$name} is missing type hint");
+                // throw new ContainerException("Failed to resolve class ${$className} because param ${$name} is missing type hint");
             }
 
             if (!$type instanceof ReflectionNamedType || $type->isBuiltin()) {

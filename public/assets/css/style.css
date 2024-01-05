@@ -260,6 +260,10 @@ body main{
     border-radius: 50%;
 }
 
+.followers-link {
+    width: 100%;
+}
+
 /* Responsive */
 
 @media (min-width:768px) {

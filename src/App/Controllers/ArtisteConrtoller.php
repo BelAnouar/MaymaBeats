@@ -7,19 +7,27 @@ declare(strict_types=1);
 namespace App\Controllers;
 
 use App\Services\artisteModal;
+use App\Services\artisteMusic;
 use Framework\TemplateEngine;
 
 class ArtisteConrtoller{
 
-    public function __construct(private TemplateEngine $view , private artisteModal $artist){
+    public function __construct(private TemplateEngine $view , private artisteModal $artist , private artisteMusic $profileArtiste ){
 
     }
 
     public function index(){
         $rest = $this->artist->afficherAlbum();
-
         echo $this->view->render("/artisteAlbum.php", ["albums" => $rest]);
     }
+
+    public function indexProfile(array $pro ){
+        $idArtiste = $pro["idArtiste"];
+        $artiste = $this->profileArtiste->getArtiste($idArtiste);
+        echo $this->view->render('/profile.php',["atistes" => $artiste]);
+
+    }
+
 
     public function addAlbum(){
     $orig_file = $_FILES["image"]["tmp_name"];

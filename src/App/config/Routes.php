@@ -38,8 +38,6 @@ function registerRoutes(App $app)
 
     $app->get('/signup', [AuthController::class, 'index']);
     $app->post('/signup', [AuthController::class, 'post']);
-    $app->get('/yassine', [YassineController::class, 'index']);
-    $app->get('/salah', [SalahController::class, 'index']);
     $app->get('/profile', [profilecontroller::class, 'index']);
 
     $app->get('/register', [AuthController::class, 'index']);
@@ -61,6 +59,8 @@ function registerRoutes(App $app)
     $app->get('/artiste', [ArtisteConrtoller::class,"index"]);
     $app->post('/musicArtiste/{idm}',[MusicControllers::class ,"addMusic" ]);
     $app->get('/musicArtiste/{idm}',[MusicControllers::class ,"afficherMusic" ]);
+    $app->get('/artisteProfile/{idArtiste}',[ArtisteConrtoller::class,"indexProfile"]);
+
     
 
     // ---------------------------------------------------------------------------------------
@@ -68,7 +68,5 @@ function registerRoutes(App $app)
 
     $app->get('/signup', [AuthController::class, 'index']);
     $app->post('/signup', [AuthController::class, 'post']);
-    $app->get('/yassine', [YassineController::class, 'index']);
-    $app->get('/salah', [SalahController::class, 'index']);
-
+    
 }

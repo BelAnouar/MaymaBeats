@@ -31,5 +31,17 @@ class artisteMusic {
             ':style_id'=> $style_id
 
         ]);
-    }    
+    }
+    
+    public function getArtiste($artist_id) {
+        $sql = "SELECT artists.*, COUNT(album.idAb) as album_count , COUNT(song.idS) as songs_count
+                FROM artists
+                JOIN album ON artists.idAr = album.artist_id
+                JOIN song ON album.idAb = song.album_id
+                WHERE artists.idAr = :artist_id
+                GROUP BY artists.idAr";
+    
+        $result =$this->db->query($sql, [':artist_id' => $artist_id])->findAll();
+        return $result;
+    }
 }   
