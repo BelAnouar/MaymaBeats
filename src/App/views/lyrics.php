@@ -76,9 +76,11 @@
                         </div>
                         <div class="d-flex justify-content-around gap-3">
                             <div class="p-8 my-5" id="border-lyrics">
-                                <p class="text-white p-5 text-justify">
-                                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fuga assumenda dolorem ipsum voluptas numquam eveniet explicabo, tempora labore sint quidem porro facilis, ut impedit reprehenderit optio mollitia eaque nesciunt culpa! Alias iste vero fugiat quaerat quam possimus culpa quisquam adipisci aperiam commodi deleniti debitis asperiores autem, rem unde ad tenetur dolorum veritatis soluta ducimus amet suscipit? Aperiam quo quod sit, possimus alias nihil beatae est cupiditate similique rem perspiciatis fugit tempora, ab neque iste labore aliquam exercitationem voluptate quae repellendus reprehenderit doloribus corrupti dolorum? Ipsa nam, cumque assumenda ut, quo cupiditate, officia facere quidem in illo dignissimos quas aliquam quos.
-                                </p>
+                                <?php foreach ($lyrics as $l) { ?>
+                                    <p class="text-white p-5 text-justify">
+                                        <?= $l['parole']; ?>
+                                    </p>
+                                <?php } ?>
                                 <!-- Button trigger modal -->
                                 <button type="button" id="boton" class="btn btn-primary mx-3" data-bs-toggle="modal" data-bs-target="#exampleModal">
                                     Ajouter Lyric
@@ -99,7 +101,11 @@
                                                 </div>
                                                 <div class="modal-footer">
                                                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+<<<<<<< HEAD
                                                     <button type="submit" class="btn btn-primary">Save changes</button>
+=======
+                                                    <button type="submit" name="save" class="btn btn-primary">Save changes</button>
+>>>>>>> yassine
                                                 </div>
                                             </form>
                                         </div>

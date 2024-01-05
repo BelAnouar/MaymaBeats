@@ -9,6 +9,8 @@ use App\Services\artisteModal;
 use App\Services\artisteMusic;
 use App\Services\indexServices;
 
+
+use App\Services\lyricServices;
 use App\Services\TestService;
 
 use Framework\Container;
@@ -62,6 +64,10 @@ return [
     artisteMusic::class => function (Container $container) {
         $db = $container->get(Database::class);
         return new artisteMusic($db);
+    },
+    lyricServices::class => function (Container $container) {
+        $db = $container->get(Database::class);
+        return new lyricServices($db);
     }
 
 

@@ -9,7 +9,12 @@
 body {
     font-family: 'Poppins', sans-serif;
     margin: 0;
+<<<<<<< HEAD
     background-image: url("../music-vinyl-simple-background-minimalism-wallpaper-525162d0bd86de8bba1872a5c05859c2.jpg");
+=======
+    /* background-image: url("../img/bg.jpg"); */
+    background-color: #000;
+>>>>>>> yassine
     background-repeat: no-repeat;
     background-position: center bottom;
     background-size: cover;
@@ -38,6 +43,19 @@ li {
     width: 100%;
 }
 
+<<<<<<< HEAD
+=======
+.h-100 {
+    position: fixed;
+    width: 20%;
+}
+
+#border {
+    border: 3px solid #3f0a5f;
+    border-radius: 10px;
+}
+
+>>>>>>> yassine
 #sidebar {
     background-color: #201924;
     max-width: 264px;
@@ -89,9 +107,16 @@ a.sidebar-link {
     display: block;
     font-size: 1rem;
 }
+<<<<<<< HEAD
 .sidebar-link{
     
     border-bottom:1px solid beige ;
+=======
+
+.sidebar-link {
+
+    border-bottom: 1px solid beige;
+>>>>>>> yassine
 }
 
 .sidebar-link[data-bs-toggle="collapse"]::after {
@@ -132,7 +157,11 @@ a.sidebar-link {
     background: rgba(0, 0, 0, .3);
 }
 
+<<<<<<< HEAD
 body main{
+=======
+body main {
+>>>>>>> yassine
     overflow-y: scroll;
     scroll-behavior: smooth;
 }
@@ -252,6 +281,7 @@ body main{
     color: #FFF;
     border-radius: 10%;
 }
+<<<<<<< HEAD
 .add:hover{
     background-color: #201924;
     color: #ffffff;
@@ -261,7 +291,15 @@ body main{
 }
 
 .followers-link {
-    width: 100%;
+=======
+
+.add:hover {
+    background-color: #201924;
+    color: #ffffff;
+}
+
+.album-img img {
+    border-radius: 50%;
 }
 
 /* Responsive */
@@ -269,5 +307,141 @@ body main{
 @media (min-width:768px) {
     .content {
         width: auto;
+    }
+}
+
+
+
+/*==== css du page parole  ====*/
+#boxes {
+    display: grid;
+    grid-template-columns: max-content max-content;
+    grid-template-areas:
+        'A B'
+        'A C';
+    gap: 32px;
+    place-content: center;
+    height: 100vh;
+}
+
+#player01 {
+    grid-area: A;
+    padding: 50px 38px;
+}
+
+#player01 .wrapper {
+    width: 190px;
+}
+
+
+#player01 img {
+    width: 190px;
+    height: 190px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+#player01 .info {
+    padding-top: 28px;
+}
+
+.player {
+    background-color: #080747;
+    padding: 28px;
+    border-radius: 20px;
+}
+
+.player img {
+    width: 84px;
+    height: 84px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+
+.info {
+    color: #E1E1E6;
+}
+
+.info p {
+    opacity: 0.68;
+    font-size: 19px;
+}
+
+.info-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.player h1 {
+    font-size: 27px;
+    color: #E1E1E6;
+    padding-bottom: 7px;
+}
+
+
+.controls {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+}
+
+.track {
+    padding-top: 28px;
+    position: relative;
+
+}
+
+.track::before {
+    content: '';
+    height: 6px;
+>>>>>>> yassine
+    width: 100%;
+}
+
+/* Responsive */
+
+<<<<<<< HEAD
+@media (min-width:768px) {
+    .content {
+        width: auto;
+=======
+
+}
+
+.time {
+    opacity: 0.7;
+    font-size: 14px;
+    color: gainsboro;
+
+    display: flex;
+    justify-content: space-between;
+    padding-top: 9.6px;
+}
+
+#border-lyrics {
+    width: 60%;
+    border: 2px solid #7019a9;
+    border-radius: 20px;
+}
+
+.my-5 {
+    margin-top: 5rem !important;
+    margin-bottom: 5rem !important;
+}
+
+@media (max-width: 670px) {
+    #boxes {
+        display: flex;
+        flex-direction: column;
+
+        max-width: 270px;
+        margin: auto;
+
+
+        height: auto;
+        padding-block: 60px;
+>>>>>>> yassine
     }
 }

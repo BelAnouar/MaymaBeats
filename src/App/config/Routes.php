@@ -102,4 +102,8 @@ function registerRoutes(App $app)
     $app->post('/musicArtiste/{idm}', [MusicControllers::class, "addMusic"]);
     $app->get('/musicArtiste/{idm}', [MusicControllers::class, "afficherMusic"]);
     $app->get('/artisteProfile/{idArtiste}', [ArtisteConrtoller::class, "indexProfile"]);
+    $app->get('/parole', [LyricsController::class, "index"]);
+    // yassine Route for index page (client)
+    $app->get('/index', [HomeController::class, 'index']);
+    $app->post('/parole', [LyricsController::class, 'addLyrics']);
 }
