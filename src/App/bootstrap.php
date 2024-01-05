@@ -10,7 +10,7 @@ use Dotenv\Dotenv;
 
 
 use function App\Config\registerRoutes;
-use Dotenv\Dotenv;
+// use Dotenv\Dotenv;
 
 $app = new App(Paths::SOURCE . "app/container-definitions.php");
 $dotenv = Dotenv::createImmutable(Paths::ROOT);

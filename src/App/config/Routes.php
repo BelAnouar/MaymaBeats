@@ -22,16 +22,16 @@ use App\Controllers\AuthController;
 use App\Controllers\LoginController;
 use App\Controllers\parolecontroller;
 use App\Controllers\SalahController;
-<<<<<<< HEAD
+
 use App\Controllers\SearchController;
-=======
+
 use App\Controllers\profilecontroller;
 use App\Controllers\Reactioncontroller;
 use App\Controllers\StylesController;
 use App\Controllers\TestController;
 use app\Services\Reactionmodel;
 use App\Controllers\IndexController;
->>>>>>> main
+
 
 function registerRoutes(App $app)
 {
@@ -80,14 +80,14 @@ function registerRoutes(App $app)
     $app->post("/client", [parolecontroller::class, "deletelyrics"]);
 
     $app->get('/signup', [AuthController::class, 'index']);
-<<<<<<< HEAD
+
     $app->post('/signup', [AuthController::class, 'registerUser']);
-    $app->get('/artis', [ArtistsConrtoller::class, 'index']);
+    $app->get('/artis', [ArtisteConrtoller::class, 'index']);
     $app->get('/yassine', [YassineController::class, 'index']);
     $app->get('/salah', [SalahController::class, 'index']);
     $app->get('/', [SearchController::class,'index']);
-=======
+
     $app->get('/login', [LoginController::class, 'index']);
     $app->post('/signup', [AuthController::class, 'register']);
->>>>>>> main
+
 }
