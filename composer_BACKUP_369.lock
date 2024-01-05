@@ -4,6 +4,13 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+    "content-hash": "2e21759f5a147c6caafbaf09c8ce5627",
+    "packages": [],
+=======
+>>>>>>> oumaima
     "content-hash": "52124f4bc6bc1d5b27fbc21d14b936ce",
     "packages": [
         {
@@ -478,14 +485,12 @@
     ],
 <<<<<<< HEAD
 =======
-<<<<<<< HEAD
-=======
     "content-hash": "2e21759f5a147c6caafbaf09c8ce5627",
     "packages": [],
->>>>>>> oussama
+>>>>>>> oumaima
 =======
->>>>>>> 27bdfab889b5ae64bb9a88d744e504cab1adcd9f
->>>>>>> main
+>>>>>>> ca5f4171356a47a9c175e7372db828c1e4d20e2d
+>>>>>>> oumaima
     "packages-dev": [],
     "aliases": [],
     "minimum-stability": "stable",

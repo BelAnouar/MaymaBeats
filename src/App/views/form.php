@@ -8,7 +8,11 @@
 </head>
 
 <body>
-    <h1>login</h1>
+    <form method="POST">
+        <input name="rr" type="text" />
+
+        <input type="submit" value="dc">
+    </form>
 </body>
 
 </html>

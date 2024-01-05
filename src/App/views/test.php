@@ -8,7 +8,11 @@
 </head>
 
 <body>
-    <h1>login</h1>
+    <?php dd($teqt) ?>
+    <form method="post">
+        <input name="tt" type="text" />
+        <button type="submit">vg</button>
+    </form>
 </body>
 
 </html>

@@ -35,6 +35,7 @@
         <div class="w-2/5 h-screen bg-orange-400 opacity-70 flex justify-center items-center p-5">
 
 
+<<<<<<< HEAD
             <form class="w-full z-10 bg-gradient-to-bl from-orange-300 to-rose-300  p-4 rounded-3xl" method="post">
                 <input type="hidden" name="type" value="register">
                 <div class="flex">
@@ -45,11 +46,23 @@
                     <div class=" w-2/4 p-2">
                         <label class="block mb-2 text-sm font-medium text-gray-200 dark:text-white">Prenom</label>
                         <input type="text" id="repeat-password" class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg   w-full p-2.5 " name="prenom" required>
+=======
+            <form class="w-full z-10 bg-gradient-to-bl from-orange-300 to-rose-300  p-4 rounded-3xl">
+                <div class="flex">
+                    <div class=" w-2/4 p-2">
+                        <label class="block mb-2 text-sm font-medium text-gray-200 dark:text-white">Nom</label>
+                        <input type="text" id="repeat-password" class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg   w-full p-2.5 " required>
+                    </div>
+                    <div class=" w-2/4 p-2">
+                        <label class="block mb-2 text-sm font-medium text-gray-200 dark:text-white">Prenom</label>
+                        <input type="text" id="repeat-password" class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg   w-full p-2.5 " required>
+>>>>>>> main
                     </div>
                 </div>
 
                 <div class=" p-2">
                     <label for="repeat-password" class="block mb-2 text-sm font-medium text-gray-200 dark:text-white">Email</label>
+<<<<<<< HEAD
                     <input type="password" id="repeat-password" class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg   w-full p-2.5 " name="email" required>
                 </div>
                 <div class=" p-2">
@@ -66,6 +79,20 @@
                 </div>
                 <div class="w-2/4 m-auto my-4">
                     <button type="submit" class="text-white bg-blue-700 hover:bg-blue-800  font-medium rounded-lg text-sm px-4 py-2.5 text-center" name="submit">Creez votre compte</button>
+=======
+                    <input type="password" id="repeat-password" class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg   w-full p-2.5 " required>
+                </div>
+                <div class=" p-2">
+                    <label for="repeat-password" class="block mb-2 text-sm font-medium text-gray-200 dark:text-white">Mot de pass</label>
+                    <input type="password" id="repeat-password" class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg   w-full p-2.5 " required>
+                </div>
+                <div class=" p-2">
+                    <label for="repeat-password" class="block mb-2 text-sm font-medium text-gray-200 dark:text-white">Confirmer le mot de pass</label>
+                    <input type="password" id="repeat-password" class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg   w-full p-2.5 " required>
+                </div>
+                <div class="w-2/4 m-auto my-4">
+                    <button type="submit" class="text-white bg-blue-700 hover:bg-blue-800  font-medium rounded-lg text-sm px-4 py-2.5 text-center  ">Creez votre compte</button>
+>>>>>>> main
                 </div>
             </form>
 

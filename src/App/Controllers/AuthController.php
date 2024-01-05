@@ -11,7 +11,7 @@ use Framework\TemplateEngine;
 class AuthController
 {
 
-    public function __construct(private TemplateEngine $view, private ValidatorService $validate)
+    public function __construct(private TemplateEngine $view)
     {
     }
 
@@ -19,6 +19,7 @@ class AuthController
     {
         echo $this->view->render("/signup.php");
     }
+<<<<<<< HEAD
 
     public function registerUser()
     {
@@ -30,4 +31,6 @@ class AuthController
 
         header("Location: signup");
     }
+=======
+>>>>>>> main
 }
