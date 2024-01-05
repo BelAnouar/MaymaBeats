@@ -62,10 +62,10 @@
                 <div class="col-md-8">
                     <div class="p-2">
                         <h4>NOTIFICATIONS</h4>
-                        </div>
+                    </div>
                     <div class="d-flex flex-row justify-content-between align-items-center p-2 bg-white mt-4 px-3 rounded">
-                    <div class="mr-1"><img class="rounded" src="/MaymaBeats/public/assets/wp9403174.jpg" width="70"></div>
-                    
+                        <div class="mr-1"><img class="rounded" src="/MaymaBeats/public/assets/wp9403174.jpg" width="70"></div>
+
                         <div class="d-flex flex-column align-items-center product-details"><span class="font-weight-bold">USER 5662424</span>
                             <!-- <div class="d-flex flex-row product-desc">
                                 <div class="size mr-1"><span class="text-grey">Size:</span><span class="font-weight-bold">&nbsp;M</span></div>
@@ -73,33 +73,36 @@
                             </div> -->
                         </div>
                         <div class="d-flex flex-row align-items-center qty">
-                            <h5 class="text-grey mt-1 mr-1 ml-1">SONG</h5></div>
+                            <h5 class="text-grey mt-1 mr-1 ml-1">SONG</h5>
+                        </div>
                         <div>
                             <h5 class="text-grey">LYRICS</h5>
                         </div>
                         <div class="d-flex align-items-center"><i class="fa fa-trash mb-1 text-danger"></i></div>
                     </div>
                     <div class="d-flex flex-row justify-content-between align-items-center p-2 bg-white mt-4 px-3 rounded">
-                    <div class="mr-1"><img class="rounded" src="/MaymaBeats/public/assets/wp9403174.jpg" width="70"></div>
-                    
+                        <div class="mr-1"><img class="rounded" src="/MaymaBeats/public/assets/wp9403174.jpg" width="70"></div>
+
                         <div class="d-flex flex-column align-items-center product-details"><span class="font-weight-bold">USER 56873</span>
-                          
+
                         </div>
                         <div class="d-flex flex-row align-items-center qty">
-                            <h5 class="text-grey mt-1 mr-1 ml-1">SONG</h5></div>
+                            <h5 class="text-grey mt-1 mr-1 ml-1">SONG</h5>
+                        </div>
                         <div>
                             <h5 class="text-grey">LYRICS</h5>
                         </div>
                         <div class="d-flex align-items-center"><i class="fa fa-trash mb-1 text-danger"></i></div>
                     </div>
                     <div class="d-flex flex-row justify-content-between align-items-center p-2 bg-white mt-4 px-3 rounded">
-                    <div class="mr-1"><img class="rounded" src="/MaymaBeats/public/assets/wp9403174.jpg" width="70"></div>
-                    
+                        <div class="mr-1"><img class="rounded" src="/MaymaBeats/public/assets/wp9403174.jpg" width="70"></div>
+
                         <div class="d-flex flex-column align-items-center product-details"><span class="font-weight-bold">USER 56873</span>
-                          
+
                         </div>
                         <div class="d-flex flex-row align-items-center qty">
-                            <h5 class="text-grey mt-1 mr-1 ml-1">SONG</h5></div>
+                            <h5 class="text-grey mt-1 mr-1 ml-1">SONG</h5>
+                        </div>
                         <div>
                             <h5 class="text-grey">LYRICS</h5>
                         </div>
@@ -108,16 +111,17 @@
                     <div class="d-flex flex-row justify-content-between align-items-center p-2 bg-white mt-4 px-3 rounded">
                         <div class="mr-1"><img class="rounded" src="/MaymaBeats/public/assets/wp9403174.jpg" width="70"></div>
                         <div class="d-flex flex-column align-items-center product-details"><span class="font-weight-bold">USER 56873</span>
-                          
+
                         </div>
                         <div class="d-flex flex-row align-items-center qty"></i>
-                            <h5 class="text-grey mt-1 mr-1 ml-1">SONG</h5></div>
+                            <h5 class="text-grey mt-1 mr-1 ml-1">SONG</h5>
+                        </div>
                         <div>
                             <h5 class="text-grey">LYRICS</h5>
                         </div>
                         <div class="d-flex align-items-center"><i class="fa fa-trash mb-1 text-danger"></i></div>
                     </div>
-                     <div class="d-flex flex-row align-items-center mt-3 p-2 bg-white rounded"><button class="btn btn-warning btn-block btn-lg ml-2 pay-button bg-black" type="button">DELETE ALL</button></div>
+                    <div class="d-flex flex-row align-items-center mt-3 p-2 bg-white rounded"><button class="btn btn-warning btn-block btn-lg ml-2 pay-button bg-black" type="button">DELETE ALL</button></div>
                 </div>
             </div>
         </div>
