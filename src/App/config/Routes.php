@@ -21,6 +21,7 @@ use App\Controllers\HomeController;
 use App\Controllers\AuthController;
 use App\Controllers\LoginController;
 use App\Controllers\SalahController;
+use App\Controllers\SearchController;
 
 function registerRoutes(App $app)
 {
@@ -34,8 +35,9 @@ function registerRoutes(App $app)
     $app->get('/admin-a', [AdminAr::class, 'index']);
     $app->get('/adminNot', [AdminNot::class, 'index']);
     $app->get('/signup', [AuthController::class, 'index']);
-    $app->post('/signup', [AuthController::class, 'post']);
+    $app->post('/signup', [AuthController::class, 'registerUser']);
     $app->get('/artis', [ArtistsConrtoller::class, 'index']);
     $app->get('/yassine', [YassineController::class, 'index']);
     $app->get('/salah', [SalahController::class, 'index']);
+    $app->get('/', [SearchController::class,'index']);
 }

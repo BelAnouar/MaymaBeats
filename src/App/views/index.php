@@ -33,6 +33,7 @@
                         </div>
 
                         <input class="peer h-full w-full outline-none text-sm text-gray-700 pr-2" type="text" id="search" placeholder="Search something.." />
+                        <span id="musicList"></span>
                     </div>
                 </div>
             </div>
@@ -445,4 +446,34 @@
             </footer>
         </div>
     </main>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        $("#search").on('keyup', function() {
+            if (input != "") {
+                $.ajax({
+                    url: "../Controllers/SearchController.php",
+                    method: "GET",
+                    data: {
+                        'search': $value
+                    },
+                    success: function(data) {
+                        console.log(data);{
+                            $("#musicList").html(data);
+                        }
+
+                        // $("#musicList").css("display", "block");
+                    }
+                });
+            } else {
+
+                $("#musicList").html("");
+                $("#musicList").css("display", "none");
+            }
+            // $value=$(this).val();
+            // alert($value);
+        });
+    </script>
 </body>
+
+</html>

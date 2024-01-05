@@ -6,26 +6,41 @@ declare(strict_types=1);
 
 namespace App\Services;
 
-
-use Framework\Rules\RequiredRule as RulesRequiredRule;
-use Framework\Validator;
-use Framework\Rules\EmailRule;
-use Framework\Rules\MinRule;
+use Framework\Database;
 
 class ValidatorService
 {
-    private Validator $validator;
 
 
-    public function __construct()
+
+    public function __construct(private Database $db)
     {
-        $this->validator = new Validator();
-        $this->validator->add("required", new RulesRequiredRule());
-        $this->validator->add("email", new EmailRule());
-        $this->validator->add("min", new MinRule());
     }
 
-    public  function validateRegister(array $formData)
+    public  function clientRegister(array $formData)
     {
+
+        $nom = $formData["nom"];
+        $prenom = $formData["prenom"];
+        $email = $formData["email"];
+        $mot_de_passe = $formData["mot_de_passe"];
+
+
+        $this->db->query("INSERT INTO  client ( `nom`, `prenom`, `email`, `password`, `image`) VALUES (':nom', ':prenom', ':email', ':password', ':image')", [
+            ':nom' => $nom, ':prenom' => $prenom, ':email' => $email, ':password' => $mot_de_passe, ':image' => "/MaymaBeats/public/assets/images/user.png"
+        ]);
+    }
+    public  function artistRegister(array $formData)
+    {
+
+        $nom = $formData["nom"];
+        $prenom = $formData["prenom"];
+        $email = $formData["email"];
+        $mot_de_passe = $formData["mot_de_passe"];
+
+
+        $this->db->query("INSERT INTO `artists`(  `nom`, `prenom`, `email`, `image`, `password`) VALUES (':nom', ':prenom', ':email', ':image', ':password')", [
+            ':nom' => $nom, ':prenom' => $prenom, ':email' => $email, ':password' => $mot_de_passe, ':image' => "/MaymaBeats/public/assets/images/user.png"
+        ]);
     }
 }

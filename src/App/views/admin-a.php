@@ -8,12 +8,6 @@
     <script src="https://kit.fontawesome.com/ae360af17e.js" crossorigin="anonymous"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
     <link rel="stylesheet" href="/MaymaBeats/public/assets/adminAr.css?v=<?php echo time(); ?>">
-
-    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans:400,300,700|Raleway:300,400,500,700">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="css/style.css">
-
     <title>Artiste</title>
 </head>
 
@@ -22,9 +16,9 @@
         <!-- Sidebar -->
         <aside id="sidebar">
             <div class="h-100">
-                <div class="sidebar-logo " style="margin-top: -9%;">
-                    <img src="vecteezy-music-writer-with-feather-and-g-clef-logo-1-658cba5074038115508023-removebg-preview.png" alt="" style="width: 65%; margin-left: -20%; ">
-                    <a href="#" style="margin-left: -15%;">MaymaBeats</a>
+                <div class="sidebar-logo">
+                    <img src="vecteezy-music-writer-with-feather-and-g-clef-logo-1-658cba5074038115508023-removebg-preview.png" alt="" style="width: 65%;">
+                    <a href="#">MaymaBeats</a>
                 </div>
                 <!-- Sidebar Navigation -->
                 <ul class="sidebar-nav">
@@ -63,53 +57,115 @@
                 </ul>
             </div>
         </aside>
+        <div class="main">
+            <nav class="navbar navbar-expand px-3 border-bottom">
+                <button class="btn" type="button" data-bs-theme="dark" style="background-color: #1a0025cf;">
+                    <span class="navbar-toggler-icon "></span>
+                </button>
+                <form class="d-flex">
+                    <input type="search" id="form1" class="form-control " placeholder="Search">
+                    <button type="button" class="btn btn-dark" style=" background-color: #320f48; " data-mdb-ripple-init>
+                        <i class="fas fa-search"></i>
+                    </button>
+                </form>
+            </nav>
+
+            <main class="content px-3 py-2">
+                <div class="container-fluid">
+                    <div class="mb-3">
+                        <main class="ml-60 pt-16 max-h-screen overflow-auto">
+                            <div id="plan"></div>
+                            <div class="px-6 py-8">
+                                <div class="max-w-4xl mx-auto">
+                                    <div class="backdrop-blur-3xl rounded-3xl border-[#BC6FF1] border-2 p-8 mb-5">
+                                        <div class="d-flex justify-content-between">
+                                            <div>
+                                                <h1 class="mx-5 text-dark mt-3 fw-bold">ARTISTS</h1>
+                                            </div>
+
+                                            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-eAq1o24KdHuwmHg9F5n3pX56K1Fmksz/5m6ZsETQPKFfFlvHkUm6q1ahFnh2LJZ6" crossorigin="anonymous"></script>
+                                        </div>
+
+
+                                        <hr class="my-10">
+                                        <div class="container h-100 mb-5">
+                                            <div class="row align-middle">
+                                                <div class="col-md-6 col-lg-4 column">
+                                                    <div class="card gr-1">
+                                                        <div class="txt">
+                                                            <h1>ANOUAR</br>
+                                                            </h1>
+                                                            <p>J-POP</p>
+                                                          
+                                                                <p>220 SONGS <br>7 ALBUMS</p>
+
+                                                           
+                                                        </div>
 
 
 
-        <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-        <!-- Leave those next 4 lines if you care about users using IE8 -->
-        <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-     <![endif]-->
+                                                        <div class="ico-card">
+                                                            <!-- <i class="fa fa-rebel"> </i> -->
+                                                            <!-- <img src="../assets/ShinMonu.jpg" class="avatar avatar-sm rounded-circle me-2" alt="invision"> -->
+
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6 col-lg-4 column">
+                                                    <div class="card gr-2">
+                                                        <div class="txt">
+                                                            <h1>SALAH</br>
+                                                            </h1>
+                                                            <p>HIP HOP</p>
+                                                          
+                                                          
+                                                          <p>220 SONGS <br>7 ALBUMS</p>
+
+                                                     
+                                                        </div>
+                                                       
+                                                        <div class="ico-card">
+                                                            <!-- <i class="fa fa-codepen"></i> -->
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-6 col-lg-4 column">
+                                                    <div class="card gr-3">
+                                                        <div class="txt">
+                                                            <h1>YASSINE</br></h1>
+                                                            <p>L AMDA7</p>
+                                                          
+                                                          
+                                                          <p>220 SONGS <br>7 ALBUMS</p>
+
+                                                     
+                                                        </div>
+                                                       
+                                                        <div class="ico-card">
+
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+                                </div>
 
 
+                            </div>
+                            <footer>
 
-        <div class="wrapper-grey padded">
-            <div class="container">
-                <h2 class="text-center">Your next trip</h2>
-
-                <div class="col-xs-12 col-sm-4">
-                    <div class="card" style="background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('https://i0.wp.com/handluggageonly.co.uk/wp-content/uploads/2016/04/IMG_5589.jpg?w=1600&ssl=1');">
-                        <div class="card-category">City</div>
-                        <div class="card-description">
-                            <h2>home</h2>
-                            <p>Lovely house</p>
-                        </div>
-                        <img class="card-user avatar avatar-large" src="https://github.com/lewagon/bootstrap-challenges/blob/master/11-Airbnb-search-form/images/anne.jpg?raw=true">
-                        <a class="card-link" href="#"></a>
+                            </footer>
                     </div>
-                </div>
-                <div class="col-xs-12 col-sm-4">
-                    <div class="card" style="background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('https://i0.wp.com/handluggageonly.co.uk/wp-content/uploads/2016/03/Positano-Weather.jpg?w=1600&ssl=1');">
-                        <div class="card-category">City</div>
-                        <div class="card-description">
-                            <h2>Home</h2>
-                            <p>Lovely house</p>
-                        </div>
-                        <img class="card-user avatar avatar-large" src="https://github.com/lewagon/bootstrap-challenges/blob/master/11-Airbnb-search-form/images/anne.jpg?raw=true">
-                        <a class="card-link" href="#"></a>
-                    </div>
-                </div>
-            </div>
+            </main>
         </div>
     </div>
-
-    <!-- Including Bootstrap JS (with its jQuery dependency) so that dynamic components work -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
-
-
+    </main>
+    </div>
+    </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
     <script>
         const toggler = document.querySelector(".btn");
