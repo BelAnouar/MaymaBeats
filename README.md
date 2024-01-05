@@ -32,3 +32,7 @@ Ensure that you have the following software installed:
     ```bash
     composer install
     ```
+### Lien TRELLO
+https://trello.com/invite/b/uCLBGHgU/ATTIa1c1360677d37ed50809b16ad9bddbb84C875D07/maymbeats
+### LIEN presentatio
+https://www.canva.com/design/DAF5DViusDA/IRE07QyVgIbjc1h9ytwyIA/edit?utm_content=DAF5DViusDA&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton
