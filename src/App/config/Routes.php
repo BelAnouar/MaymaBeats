@@ -26,6 +26,8 @@ use App\Controllers\profilecontroller;
 use App\Controllers\Reactioncontroller;
 use App\Controllers\StylesController;
 use App\Controllers\TestController;
+use App\Controllers\IndexController;
+use App\Controllers\LyricsController;
 
 function registerRoutes(App $app)
 {
@@ -70,4 +72,8 @@ function registerRoutes(App $app)
     $app->post("/client", [Reactioncontroller::class, "adddislike"]);
     $app->get("/client", [parolecontroller::class, "addlyrics"]);
     $app->post("/client", [parolecontroller::class, "deletelyrics"]);
+    $app->get('/parole', [LyricsController::class, "index"]);
+    // yassine Route for index page (client)
+    $app->get('/index', [HomeController::class, 'index']);
+    $app->post('/parole', [LyricsController::class, 'addLyrics']);
 }

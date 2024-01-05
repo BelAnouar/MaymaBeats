@@ -26,7 +26,7 @@ class Router
     $path = "/{$path}/";
     $path = preg_replace('#[/]{2,}#', '/', $path);
 
-    $path = str_replace("/MaymaBeats/public/index.php/", "/", $path);
+    $path = str_replace("/Maymabeats/public/index.php/", "/", $path);
 
 
     return $path;

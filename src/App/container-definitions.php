@@ -5,6 +5,8 @@ declare(strict_types=1);
 use App\Config\Paths;
 use App\Services\StylesService;
 use App\Services\artisteModal;
+use App\Services\indexServices;
+use App\Services\lyricServices;
 use App\Services\TestService;
 
 use Framework\Container;
@@ -34,6 +36,14 @@ return [
     artisteModal::class => function (Container $container) {
         $db = $container->get(Database::class);
         return new artisteModal($db);
+    },
+    indexServices::class => function (Container $container) {
+        $db = $container->get(Database::class);
+        return new indexServices($db);
+    },
+    lyricServices::class => function (Container $container) {
+        $db = $container->get(Database::class);
+        return new lyricServices($db);
     }
 
 
