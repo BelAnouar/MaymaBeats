@@ -7,13 +7,18 @@ declare(strict_types=1);
 namespace App\Config;
 
 
+
+use App\Controllers\musicArtiste;
 use App\Controllers\ArtisteConrtoller;
 use Framework\App;
+use App\Controllers\YassineController;
 
 use App\Controllers\AdminAr;
 use App\Controllers\AdminCl;
 use App\Controllers\AdminController;
 use App\Controllers\AdminNot;
+
+
 
 use App\Controllers\HomeController;
 
@@ -21,6 +26,7 @@ use App\Controllers\AuthController;
 use App\Controllers\ForgotController;
 use App\Controllers\LoginController;
 use App\Controllers\parolecontroller;
+
 use App\Controllers\SalahController;
 
 use App\Controllers\SearchController;
@@ -45,6 +51,11 @@ function registerRoutes(App $app)
     $app->post('/signup', [AuthController::class, 'registerUser']);
 
     $app->get('/profile', [profilecontroller::class, 'index']);
+
+    $app->get('/signup', [AuthController::class, 'index']);
+    $app->post('/signup', [AuthController::class, 'post']);
+    $app->get('/profile', [profilecontroller::class, 'index']);
+
     $app->get('/register', [AuthController::class, 'index']);
     $app->post('/register', [AuthController::class, 'register']);
     $app->get('/admin', [AdminController::class, 'index']);
@@ -53,6 +64,8 @@ function registerRoutes(App $app)
     // $app->get('/adminNot', [AdminNot::class, 'index']);
 
     //Style Controllers
+    $app->get('/adminNot', [AdminNot::class, 'index']);
+
     $app->get('/admin-s', [StylesController::class, 'index']);
 
     $app->post('/admin-s', [StylesController::class, 'insertStyle']);
@@ -106,4 +119,20 @@ function registerRoutes(App $app)
     // yassine Route for index page (client)
     $app->get('/index', [HomeController::class, 'index']);
     $app->post('/parole', [LyricsController::class, 'addLyrics']);
+
+    // ARTISTE ----------------------------------------------------------------------------
+
+    $app->post('/artiste', [ArtisteConrtoller::class, "addAlbum"]);
+    $app->get('/artiste', [ArtisteConrtoller::class, "index"]);
+    $app->post('/musicArtiste/{idm}', [MusicControllers::class, "addMusic"]);
+    $app->get('/musicArtiste/{idm}', [MusicControllers::class, "afficherMusic"]);
+    $app->get('/artisteProfile/{idArtiste}', [ArtisteConrtoller::class, "indexProfile"]);
+
+
+
+    // ---------------------------------------------------------------------------------------
+
+
+    $app->get('/signup', [AuthController::class, 'index']);
+    $app->post('/signup', [AuthController::class, 'post']);
 }

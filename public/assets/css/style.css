@@ -11,10 +11,13 @@ body {
     margin: 0;
 <<<<<<< HEAD
     background-image: url("../music-vinyl-simple-background-minimalism-wallpaper-525162d0bd86de8bba1872a5c05859c2.jpg");
+<<<<<<< HEAD
 =======
     /* background-image: url("../img/bg.jpg"); */
     background-color: #000;
 >>>>>>> yassine
+=======
+>>>>>>> salah
     background-repeat: no-repeat;
     background-position: center bottom;
     background-size: cover;
@@ -291,6 +294,7 @@ body main {
 }
 
 .followers-link {
+<<<<<<< HEAD
 =======
 
 .add:hover {
@@ -300,6 +304,9 @@ body main {
 
 .album-img img {
     border-radius: 50%;
+=======
+    width: 100%;
+>>>>>>> salah
 }
 
 /* Responsive */

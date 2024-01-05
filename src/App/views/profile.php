@@ -69,7 +69,12 @@
                 </form>
             </nav>
             <?php
+<<<<<<< HEAD
             foreach ($atistes  as $artiste){
+=======
+           
+            foreach ($artists  as $artiste){
+>>>>>>> salah
             ?>
             <div class="card h-75 bg-dark ">
                 <div class="ds-top"></div>

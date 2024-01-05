@@ -11,6 +11,8 @@ use App\Services\indexServices;
 
 
 use App\Services\lyricServices;
+use App\Controllers\ArtisteConrtoller;
+
 use App\Services\TestService;
 
 use Framework\Container;
@@ -42,6 +44,9 @@ return [
         return new TestService($db);
     },
 
+
+
+    // ARTISTE -------------------------------------------------
     artisteModal::class => function (Container $container) {
         $db = $container->get(Database::class);
         return new artisteModal($db);
@@ -68,7 +73,11 @@ return [
     lyricServices::class => function (Container $container) {
         $db = $container->get(Database::class);
         return new lyricServices($db);
-    }
+    },
+
+
+    // -----------------------------------------------------------------
+
 
 
 

@@ -15,6 +15,7 @@ use function App\Config\registerRoutes;
 $app = new App(Paths::SOURCE . "app/container-definitions.php");
 $dotenv = Dotenv::createImmutable(Paths::ROOT);
 $dotenv->load();
+
 registerRoutes($app);
 
 return $app;
