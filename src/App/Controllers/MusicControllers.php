@@ -13,16 +13,15 @@ use Framework\TemplateEngine;
 
 class MusicControllers {
 
-    public function __construct(private TemplateEngine $view , private artisteMusic $Musicartist,private artisteModal $artist,private StylesService $style){
+    public function __construct(private TemplateEngine $view , private artisteMusic $Musicartist,private artisteModal $artist,private StylesService $style ){
 
     }
     public function afficherMusic(array $for){
         $idAlbum=$for["idm"];
-       
         $album=$this->artist->getAlbumById($idAlbum); 
         $song = $this->Musicartist->afficherMusic($idAlbum);
         $style =$this->style->getStyles();
-        echo $this->view->render("/artisteMusic.php", ["album" => $album,"song"=>$song,"styles"=>$style]);
+        echo $this->view->render("/artisteMusic.php", ["album" => $album,"song"=>$song,"styles"=>$style  ]);
 
     }
     public function addMusic(array $param){

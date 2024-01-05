@@ -14,7 +14,7 @@ class artisteMusic {
     }
 
     public function afficherMusic($idAlbum){
-        $sql = "SELECT * FROM `song` inner join styles on song.style_id = styles.idStyle  WHERE `album_id` = :idAb ";
+        $sql = "SELECT * FROM `song` inner join styles on song.style_id = styles.idStyle WHERE `album_id` = :idAb ";
         $result= $this->db->query($sql,[
             ':idAb'=> $idAlbum,
             
@@ -40,7 +40,7 @@ class artisteMusic {
                 JOIN song ON album.idAb = song.album_id
                 WHERE artists.idAr = :artist_id
                 GROUP BY artists.idAr";
-    
+                
         $result =$this->db->query($sql, [':artist_id' => $artist_id])->findAll();
         return $result;
     }

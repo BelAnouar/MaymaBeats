@@ -34,7 +34,7 @@ class artisteModal {
         }
     public function getAlbumById($id)
     {
-        $sql = "SELECT * FROM `album` WHERE `idAb` = :idAb ";
+        $sql = "SELECT * FROM album join artists on album.artist_id = artists.idAr WHERE `idAb` = :idAb ";
         $result= $this->db->query($sql,[
             ':idAb'=> $id,
             

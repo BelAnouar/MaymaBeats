@@ -137,9 +137,11 @@
                                             </div>
                                             <div class="col-8">
                                                 <h2 class="text-white fw-bold"><?= $album["title"]; ?></h2>
-                                                <h3 class="fw-bold"><img src="<?= $album["imageAb"]; ?>" class="rounded-circle" style="width: 50px;" alt="Avatar" />
-                                                    Oum keltom
+                                               
+                                                <h3 class="fw-bold"><img src="<?= $album["image"]; ?>" class="rounded-circle" style="width: 50px;" alt="Avatar" />
+                                                    <?= $album['nom']?>
                                                 </h3>
+                                                
                                                 <p class="text-white"><?= $album["description"]; ?></p>
                                             </div>
                                         </div>
@@ -168,8 +170,7 @@
                                                             </div>
                                                         </td>
                                                         <td>
-                                                            <p class="fw-normal mb-1">Software engineer</p>
-                                                            <p class=" mb-0">IT department</p>
+                                                            <p class="fw-normal mb-1">  <?= $album["nom"] . ' ' . $album["prenom"] ?></p>
                                                         </td>
                                                         <td>
                                                             <span class="badge badge-warning rounded-pill d-inline"><?= $son["dateC"]; ?></span>

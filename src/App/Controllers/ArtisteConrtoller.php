@@ -19,12 +19,13 @@ class ArtisteConrtoller{
     public function index(){
         $rest = $this->artist->afficherAlbum();
         echo $this->view->render("/artisteAlbum.php", ["albums" => $rest]);
+
     }
 
     public function indexProfile(array $pro ){
         $idArtiste = $pro["idArtiste"];
         $artiste = $this->profileArtiste->getArtiste($idArtiste);
-        echo $this->view->render('/profile.php',["atistes" => $artiste]);
+        echo $this->view->render('/profile.php',["artists" => $artiste]);
 
     }
 
