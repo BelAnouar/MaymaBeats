@@ -9,8 +9,7 @@ namespace App\Config;
 
 use App\Controllers\ArtisteConrtoller;
 use Framework\App;
-use App\Controllers\ArtistsConrtoller;
-use App\Controllers\YassineController;
+
 use App\Controllers\AdminAr;
 use App\Controllers\AdminCl;
 use App\Controllers\AdminController;
@@ -19,6 +18,7 @@ use App\Controllers\AdminNot;
 use App\Controllers\HomeController;
 
 use App\Controllers\AuthController;
+use App\Controllers\ForgotController;
 use App\Controllers\LoginController;
 use App\Controllers\parolecontroller;
 use App\Controllers\SalahController;
@@ -28,6 +28,8 @@ use App\Controllers\StylesController;
 use App\Controllers\TestController;
 use app\Services\Reactionmodel;
 use App\Controllers\IndexController;
+use App\Controllers\OPTController;
+use App\Controllers\RestController;
 
 function registerRoutes(App $app)
 {
@@ -35,9 +37,8 @@ function registerRoutes(App $app)
     $app->get('/', [HomeController::class, 'home']);
     $app->get('/login', [LoginController::class, 'index']);
     $app->get('/signup', [AuthController::class, 'index']);
-    $app->post('/signup', [AuthController::class, 'post']);
-    $app->get('/yassine', [YassineController::class, 'index']);
-    $app->get('/salah', [SalahController::class, 'index']);
+    $app->post('/signup', [AuthController::class, 'registerUser']);
+
     $app->get('/profile', [profilecontroller::class, 'index']);
     $app->get('/register', [AuthController::class, 'index']);
     $app->post('/register', [AuthController::class, 'register']);
@@ -56,9 +57,7 @@ function registerRoutes(App $app)
 
     $app->get('/admin-s/{transaction}', [StylesController::class, 'view']);
 
-    $app->get("/test", [TestController::class, "index"]);
-    $app->get('/test/{anouar}', [TestController::class, "aff"]);
-    $app->post("/test", [TestController::class, "post"]);
+
 
     $app->post('/artiste', [ArtisteConrtoller::class, "addAlbum"]);
     $app->get('/artiste', [ArtisteConrtoller::class, "index"]);
@@ -67,9 +66,7 @@ function registerRoutes(App $app)
 
 
 
-    $app->get("/test", [TestController::class, "index"]);
-    $app->get('/test/{anouar}', [TestController::class, "aff"]);
-    $app->post("/test", [TestController::class, "post"]);
+
     $app->post("/client", [Reactionmodel::class, "addlike"]);
     $app->post("/client", [Reactionmodel::class, "adddislike"]);
     $app->get("/client", [parolecontroller::class, "addlyrics"]);
@@ -77,5 +74,12 @@ function registerRoutes(App $app)
 
     $app->get('/signup', [AuthController::class, 'index']);
     $app->get('/login', [LoginController::class, 'index']);
+    $app->post('/login', [LoginController::class, 'loginuser']);
     $app->post('/signup', [AuthController::class, 'register']);
+    $app->get('/forgotPwd', [ForgotController::class, 'index']);
+    $app->post('/forgotPwd', [ForgotController::class, 'frogetPass']);
+    $app->get('/opt', [OPTController::class, 'index']);
+    $app->post('/opt', [OPTController::class, 'sentPass']);
+    $app->get('/Restpassword', [RestController::class, 'index']);
+    $app->post('/Restpassword', [RestController::class, 'changePass']);
 }

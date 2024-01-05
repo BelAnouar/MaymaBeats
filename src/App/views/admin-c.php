@@ -16,9 +16,9 @@
         <!-- Sidebar -->
         <aside id="sidebar">
             <div class="h-100">
-                <div class="sidebar-logo " style="margin-top: -9%;">
-                    <img src="vecteezy-music-writer-with-feather-and-g-clef-logo-1-658cba5074038115508023-removebg-preview.png" alt="" style="width: 65%; margin-left: -20%; ">
-                    <a href="#" style="margin-left: -15%;">MaymaBeats</a>
+                <div class="sidebar-logo">
+                    <img src="vecteezy-music-writer-with-feather-and-g-clef-logo-1-658cba5074038115508023-removebg-preview.png" alt="" style="width: 65%;">
+                    <a href="#">MaymaBeats</a>
                 </div>
                 <!-- Sidebar Navigation -->
                 <ul class="sidebar-nav">
@@ -59,7 +59,7 @@
         </aside>
         <div class="main">
             <nav class="navbar navbar-expand px-3 border-bottom">
-                <button class="btn" type="button" data-bs-theme="dark">
+                <button class="btn" type="button" data-bs-theme="dark" style="background-color: #1a0025cf;">
                     <span class="navbar-toggler-icon "></span>
                 </button>
                 <form class="d-flex">
@@ -80,46 +80,7 @@
                                     <div class="backdrop-blur-3xl rounded-3xl border-[#BC6FF1] border-2 p-8 mb-5">
                                         <div class="d-flex justify-content-between">
                                             <div>
-                                                <h1 class="mx-5 text-white mt-3 fw-bold">ALBUMS</h1>
-                                            </div>
-                                            <div class="container justify-content-end d-flex ">
-                                                <button id="openModal" class="btn add mt-3" type="button" data-bs-toggle="modal" data-bs-target="#myModal">Ajouter Album
-                                                    <svg xmlns="http://www.w3.org/2000/svg" height="24" fill="white" viewBox="0 -960 960 960" width="24">
-                                                        <path d="M440-280h80v-160h160v-80H520v-160h-80v160H280v80h160v160Zm40 200q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Zm0-80q134 0 227-93t93-227q0-134-93-227t-227-93q-134 0-227 93t-93 227q0 134 93 227t227 93Zm0-320Z" />
-                                                    </svg>
-                                                </button>
-
-                                                <div class="modal" id="myModal">
-                                                    <div class="modal-dialog">
-                                                        <div class="modal-content">
-
-                                                            <div class="modal-header">
-                                                                <h4 class="modal-title">Create New Album</h4>
-                                                                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
-                                                            </div>
-
-                                                            <div class="modal-body">
-                                                                <form action="" method="post">
-                                                                    <div class="mb-3">
-                                                                        <label for="title" class="form-label">Title</label>
-                                                                        <input type="text" class="form-control" id="title" placeholder="Type Article title" name="title">
-                                                                    </div>
-                                                                    <div class="mb-3">
-                                                                        <label for="image" class="form-label">Image</label>
-                                                                        <input type="file" class="form-control" id="image" name="image">
-                                                                    </div>
-
-                                                                    <div class="mb-3">
-                                                                        <label for="description" class="form-label">Album Description</label>
-                                                                        <textarea class="form-control" id="description" placeholder="Write article description here" name="description"></textarea>
-                                                                    </div>
-                                                                    <button type="submit" name="insert" class="btn text-white " style="background-color: #320f48;">Ajouter Album</button>
-                                                                </form>
-                                                            </div>
-
-                                                        </div>
-                                                    </div>
-                                                </div>
+                                                <h1 class="mx-5 text-dark mt-3 fw-bold">CLIENTS</h1>
                                             </div>
 
                                             <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-eAq1o24KdHuwmHg9F5n3pX56K1Fmksz/5m6ZsETQPKFfFlvHkUm6q1ahFnh2LJZ6" crossorigin="anonymous"></script>
@@ -133,9 +94,54 @@
 
 
 
-                                                <div class="table-responsive custom-table-responsive">
+                                                <div class="table-responsive custom-table-responsive d-flex col-12">
+                                                    <div class="tiles d-flex">
+                                                        <article class="tile col-2">
+                                                            <div class="tile-header">
+                                                                <i class="ph-lightning-light"></i>
+                                                                <h3>
+                                                                    <span>PROFIE</span>
+                                                                </h3>
+                                                            </div>
+                                                        </article>
+                                                        <article class="tile col-3">
+                                                            <div class="tile-header">
+                                                                <i class="ph-lightning-light"></i>
+                                                                <h3>
+                                                                    <span>NAME</span>
+                                                                </h3>
+                                                            </div>
+                                                        </article>
+                                                        <article class="tile col-3">
+                                                            <div class="tile-header">
+                                                                <i class="ph-fire-simple-light"></i>
+                                                                <h3>
+                                                                    <span>N°Lyrics</span>
+                                                                </h3>
+                                                            </div>
+                                                        </article>
+                                                        <article class="tile col-3">
+                                                            <div class="tile-header">
+                                                                <i class="ph-file-light"></i>
+                                                                <h3>
+                                                                    <span>N° playlists</span>
+                                                                </h3>
+                                                            </div>
 
-                                                    <table class="table custom-table ">
+                                                        </article>
+                                                        <article class="tile col-3">
+                                                            <div class="tile-header">
+                                                                <i class="ph-file-light"></i>
+                                                                <h3>
+                                                                    <span>FAVORITTS</span>
+                                                                </h3>
+                                                            </div>
+
+                                                        </article>
+                                                    </div>
+                                                </div>
+
+                                                <!-- <table class="table custom-table ">
                                                         <thead>
                                                             <tr>
 
@@ -291,27 +297,98 @@
                                                             </tr>
 
                                                         </tbody>
-                                                    </table>
-                                                </div>
+                                                    </table> -->
+                                                <section class="transfer-section">
 
-
+                                                    <div class="transfers col-11">
+                                                        <div class="transfer">
+                                                            <div class="transfer-logo col-5">
+                                                                <img src="https://assets.codepen.io/285131/apple.svg" />
+                                                            </div>
+                                                            <dl class="transfer-details col-2">
+                                                                <div>
+                                                                    <dt>Apple Inc.</dt>
+                                                                    <dd>Apple ID Payment</dd>
+                                                                </div>
+                                                                <div>
+                                                                    <dt>4012</dt>
+                                                                    <dd>Last four digits</dd>
+                                                                </div>
+                                                                <div>
+                                                                    <dt>28 Oct. 21</dt>
+                                                                    <dd>Date payment</dd>
+                                                                </div>
+                                                            </dl>
+                                                            <div class="transfer-number">
+                                                                - $ 550
+                                                            </div>
+                                                        </div>
+                                                        <div class="transfer">
+                                                            <div class="transfer-logo">
+                                                                <img src="https://assets.codepen.io/285131/pinterest.svg" />
+                                                            </div>
+                                                            <dl class="transfer-details">
+                                                                <div>
+                                                                    <dt>Pinterest</dt>
+                                                                    <dd>2 year subscription</dd>
+                                                                </div>
+                                                                <div>
+                                                                    <dt>5214</dt>
+                                                                    <dd>Last four digits</dd>
+                                                                </div>
+                                                                <div>
+                                                                    <dt>26 Oct. 21</dt>
+                                                                    <dd>Date payment</dd>
+                                                                </div>
+                                                            </dl>
+                                                            <div class="transfer-number">
+                                                                - $ 120
+                                                            </div>
+                                                        </div>
+                                                        <div class="transfer">
+                                                            <div class="transfer-logo">
+                                                                <img src="https://assets.codepen.io/285131/warner-bros.svg" />
+                                                            </div>
+                                                            <dl class="transfer-details">
+                                                                <div>
+                                                                    <dt>Warner Bros.</dt>
+                                                                    <dd>Cinema</dd>
+                                                                </div>
+                                                                <div>
+                                                                    <dt>2228</dt>
+                                                                    <dd>Last four digits</dd>
+                                                                </div>
+                                                                <div>
+                                                                    <dt>22 Oct. 21</dt>
+                                                                    <dd>Date payment</dd>
+                                                                </div>
+                                                            </dl>
+                                                            <div class="transfer-number">
+                                                                - $ 70
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </section>
                                             </div>
+
 
                                         </div>
 
                                     </div>
 
-
                                 </div>
-                                <footer>
 
-                                </footer>
+
                             </div>
-                        </main>
+                            <footer>
+
+                            </footer>
                     </div>
-                </div>
             </main>
         </div>
+    </div>
+    </main>
+    </div>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
     <script>

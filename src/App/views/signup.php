@@ -31,36 +31,41 @@
 
         </div>
 
-        <div class="w-2/5 h-screen opacity-70  bg-[url('/brief%2010/MaymaBeats/public/assets/images/signup.jpg')] bg-cover bg-center bg-no-repeat"></div>
+        <div class="w-2/5 h-screen opacity-70  bg-[url('/MaymaBeats/public/assets/images/signup.jpg')] bg-cover bg-center bg-no-repeat"></div>
         <div class="w-2/5 h-screen bg-orange-400 opacity-70 flex justify-center items-center p-5">
 
 
-            <form class="w-full z-10 bg-gradient-to-bl from-orange-300 to-rose-300  p-4 rounded-3xl">
+            <form class="w-full z-10 bg-gradient-to-bl from-orange-300 to-rose-300  p-4 rounded-3xl" method="post">
+                <input type="hidden" name="type" value="register">
                 <div class="flex">
                     <div class=" w-2/4 p-2">
                         <label class="block mb-2 text-sm font-medium text-gray-200 dark:text-white">Nom</label>
-                        <input type="text" id="repeat-password" class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg   w-full p-2.5 " required>
+                        <input type="text" id="repeat-password" class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg   w-full p-2.5 " name="nom" required>
                     </div>
                     <div class=" w-2/4 p-2">
                         <label class="block mb-2 text-sm font-medium text-gray-200 dark:text-white">Prenom</label>
-                        <input type="text" id="repeat-password" class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg   w-full p-2.5 " required>
+                        <input type="text" id="repeat-password" class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg   w-full p-2.5 " name="prenom" required>
                     </div>
                 </div>
 
                 <div class=" p-2">
                     <label for="repeat-password" class="block mb-2 text-sm font-medium text-gray-200 dark:text-white">Email</label>
-                    <input type="password" id="repeat-password" class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg   w-full p-2.5 " required>
+                    <input type="email" id="repeat-password" class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg   w-full p-2.5 " name="email" required>
                 </div>
                 <div class=" p-2">
-                    <label for="repeat-password" class="block mb-2 text-sm font-medium text-gray-200 dark:text-white">Mot de pass</label>
-                    <input type="password" id="repeat-password" class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg   w-full p-2.5 " required>
+                    <label for="repeat-password" class="block mb-2 text-sm font-medium text-gray-200 dark:text-white">Mot de passe</label>
+                    <input type="password" id="repeat-password" class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg   w-full p-2.5 " name="pass" required>
                 </div>
                 <div class=" p-2">
-                    <label for="repeat-password" class="block mb-2 text-sm font-medium text-gray-200 dark:text-white">Confirmer le mot de pass</label>
-                    <input type="password" id="repeat-password" class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg   w-full p-2.5 " required>
+                    <label for="repeat-password" class="block mb-2 text-sm font-medium text-gray-200 dark:text-white">Confirm</label>
+                    <select name="Role" class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg   w-full p-2.5 " name="" id="">
+                        <option value="artist">artist</option>
+                        <option value="client">client</option>
+                    </select>
+
                 </div>
                 <div class="w-2/4 m-auto my-4">
-                    <button type="submit" class="text-white bg-blue-700 hover:bg-blue-800  font-medium rounded-lg text-sm px-4 py-2.5 text-center  ">Creez votre compte</button>
+                    <button type="submit" class="text-white bg-blue-700 hover:bg-blue-800  font-medium rounded-lg text-sm px-4 py-2.5 text-center" name="submit">Creez votre compte</button>
                 </div>
             </form>
 

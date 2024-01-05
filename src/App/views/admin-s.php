@@ -69,61 +69,78 @@
                     </button>
                 </form>
             </nav>
-            <div id="content" class="d-flex flex-column flex-wrap col-9 mt-4 mx-5">
-                <div class="text-end mb-3">
-                    <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                        <ion-icon name="create-outline"></ion-icon> Add
-                    </button>
-                </div>
 
-                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                    <div class="modal-dialog">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <h1 class="modal-title fs-5" id="exampleModalLabel">Add Style</h1>
-                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            <section class="content px-3 py-2">
+                <div class="container-fluid">
+                    <div class="mb-3">
+                        <section class="ml-60 pt-16 max-h-screen overflow-auto">
+
+                            <div class="text-end mb-3">
+                                <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                    <ion-icon name="create-outline"></ion-icon> Add
+                                </button>
                             </div>
-                            <form method="post">
-                                <div class="modal-body">
-                                    <label for="exampleDataList" class="form-label">entrer style music</label>
-                                    <input class="form-control" name="styleName" list="datalistOptions" id="exampleDataList" placeholder="style Music">
+
+                            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h1 class="modal-title fs-5" id="exampleModalLabel">Add Style</h1>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                        </div>
+                                        <form method="post">
+                                            <div class="modal-body">
+                                                <label for="exampleDataList" class="form-label">entrer style music</label>
+                                                <input class="form-control" name="styleName" list="datalistOptions" id="exampleDataList" placeholder="style Music">
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                                <button type="submit" class="btn btn-primary">add</button>
+                                            </div>
+                                        </form>
+                                    </div>
                                 </div>
-                                <div class="modal-footer">
-                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                                    <button type="submit" class="btn btn-primary">add</button>
-                                </div>
-                            </form>
-                        </div>
+                            </div>
+                            <table class="table w-50">
+                                <thead>
+                                    <tr>
+                                        <th scope="col">#</th>
+                                        <th scope="col">Styles Music</th>
+
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <?php foreach ($styles as $style) {
+
+                                    ?>
+                                        <tr>
+                                            <th scope="row"><?= $style["idStyle"] ?></th>
+                                            <td><?= $style["nomStyle"] ?></td>
+
+                                        </tr>
+                                    <?php    } ?>
+
+                                </tbody>
+                            </table>
+                        </section>
                     </div>
                 </div>
-                <table class="table w-50">
-                    <thead>
-                        <tr>
-                            <th scope="col">#</th>
-                            <th scope="col">Styles Music</th>
 
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <?php foreach ($styles as $style) {
-
-                        ?>
-                            <tr>
-                                <th scope="row"><?= $style["idStyle"] ?></th>
-                                <td><?= $style["nomStyle"] ?></td>
-
-                            </tr>
-                        <?php    } ?>
-
-                    </tbody>
-                </table>
-            </div>
+            </section>
         </div>
+        < </div>
+
     </div>
-    </section>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
-    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+
+
 </body>
 
 </html>
