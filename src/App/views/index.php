@@ -449,7 +449,7 @@ var_dump($songs);
                                                                                                                     <div class="spotify-playlists">
                                                                                                                         <div class="list">
                                                                                                                             <div class="item">
-                                                                                                                                <img src="https://i.scdn.co/image/ab67616d0000b2733b5e11ca1b063583df9492db" />
+                                                                                                                                <img src="https://i.scdn.co/image/ab67616d0000b2733b5e11ca1b063583df9492db">
                                                                                                                                 <div class="play">
                                                                                                                                     <span class="fa fa-play"></span>
                                                                                                                                 </div>
@@ -458,7 +458,7 @@ var_dump($songs);
                                                                                                                             </div>
 
                                                                                                                             <div class="item">
-                                                                                                                                <img src="https://i.scdn.co/image/ab67616d0000b2733b5e11ca1b063583df9492db" />
+                                                                                                                                <img src="https://i.scdn.co/image/ab67616d0000b2733b5e11ca1b063583df9492db">
                                                                                                                                 <div class="play">
                                                                                                                                     <span class="fa fa-play"></span>
                                                                                                                                 </div>
@@ -467,7 +467,7 @@ var_dump($songs);
                                                                                                                             </div>
 
                                                                                                                             <div class="item">
-                                                                                                                                <img src="https://i.scdn.co/image/ab67616d0000b2733b5e11ca1b063583df9492db" />
+                                                                                                                                <img src="https://i.scdn.co/image/ab67616d0000b2733b5e11ca1b063583df9492db">
                                                                                                                                 <div class="play">
                                                                                                                                     <span class="fa fa-play"></span>
                                                                                                                                 </div>
@@ -740,9 +740,7 @@ var_dump($songs);
 </script>
 
 </main>
-<footer>
 
-</footer>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
 
 <script>
