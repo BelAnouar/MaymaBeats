@@ -28,8 +28,12 @@ use App\Controllers\StylesController;
 use App\Controllers\TestController;
 use app\Services\Reactionmodel;
 use App\Controllers\IndexController;
+
 use App\Controllers\OPTController;
 use App\Controllers\RestController;
+
+use App\Controllers\LyricsController;
+
 
 function registerRoutes(App $app)
 {
@@ -61,8 +65,11 @@ function registerRoutes(App $app)
 
     $app->post('/artiste', [ArtisteConrtoller::class, "addAlbum"]);
     $app->get('/artiste', [ArtisteConrtoller::class, "index"]);
+
+    $app->get('/parole', [LyricsController::class, "index"]);
+
     // yassine Route for index page (client)
-    $app->get('/index', [IndexController::class, 'index']);
+    // $app->get('/index', [IndexController::class, 'index']);
 
 
 

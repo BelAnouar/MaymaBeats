@@ -34,13 +34,14 @@ return [
 
         return new TestService($db);
     },
+
     artisteModal::class => function (Container $container) {
         $db = $container->get(Database::class);
         return new artisteModal($db);
     },
+
     indexServices::class => function (Container $container) {
         $db = $container->get(Database::class);
-
         return new indexServices($db);
     },
     ValidatorService::class => function (Container $container) {
